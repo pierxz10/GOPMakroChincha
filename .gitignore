@@ -50,6 +50,7 @@ app.*.map.json
 # Configuracion local Android
 /android/local.properties
 /android/.gradle/
+/android/build/
 # Credenciales y configuracion privada
 .env
 .env.*

@@ -16,26 +16,26 @@ void main() {
 
   test('busca sin distinguir mayúsculas, tildes ni espacios extra', () async {
     await controller.load();
-    controller.setQuery('  TELEFONO   movil  ');
-    expect(controller.visibleObjects.single.reference, 'OBJ-0002');
+    controller.setQuery('  MOCHILA   negra  ');
+    expect(controller.visibleObjects.single.reference, 'OBJ-001');
   });
 
   test('busca por código y ubicación', () async {
     await controller.load();
-    controller.setQuery('obj-0004');
-    expect(controller.visibleObjects.single.name, 'Llaves');
-    controller.setQuery('area cajas');
+    controller.setQuery('obj-006');
+    expect(controller.visibleObjects.single.name, 'Llaves plateadas');
+    controller.setQuery('zona cajas');
     expect(controller.visibleObjects.length, 2);
   });
 
   test('combina lugar y fechas inclusivas y permite limpiarlos', () async {
     await controller.load();
-    controller.setLocation('AREA cajas');
+    controller.setLocation('ZONA cajas');
     controller.setDateRange(DateTime(2026, 10, 1), DateTime(2026, 10, 1));
-    expect(controller.visibleObjects.single.reference, 'OBJ-0001');
+    expect(controller.visibleObjects.single.reference, 'OBJ-006');
     controller.setDateRange(DateTime(2026, 10, 5), DateTime(2026, 10, 5));
-    expect(controller.visibleObjects.single.reference, 'OBJ-0005');
-    controller.setQuery('mochila');
+    expect(controller.visibleObjects.single.reference, 'OBJ-001');
+    controller.setQuery('billetera');
     expect(controller.visibleObjects, isEmpty);
     controller.clearFilters();
     expect(controller.hasFilters, isFalse);
@@ -44,10 +44,10 @@ void main() {
 
   test('combina categoría, estado y búsqueda como una intersección', () async {
     await controller.load();
-    controller.setCategory(ObjectCategory.electronics);
-    controller.setStatus(ObjectStatus.inCustody);
-    expect(controller.visibleObjects.single.reference, 'OBJ-0002');
-    controller.setQuery('audifonos');
+    controller.setCategory(ObjectCategory.accessories);
+    controller.setStatus(ObjectStatus.claimed);
+    expect(controller.visibleObjects.single.reference, 'OBJ-002');
+    controller.setQuery('mochila');
     expect(controller.visibleObjects, isEmpty);
   });
 
@@ -60,6 +60,21 @@ void main() {
     expect(controller.hasFilters, isFalse);
     expect(controller.visibleObjects.length, 6);
   });
+
+  test(
+    'un filtro solo con fecha final permanece visible y es inclusivo',
+    () async {
+      await controller.load();
+      controller.setDateRange(null, DateTime(2026, 10, 2));
+      expect(controller.hasFilters, isTrue);
+      expect(controller.visibleObjects.map((o) => o.reference), [
+        'OBJ-005',
+        'OBJ-006',
+      ]);
+      controller.clearFilters();
+      expect(controller.hasFilters, isFalse);
+    },
+  );
 
   test('permite reintentar después de un error de carga', () async {
     final repository = _FailOnceRepository();

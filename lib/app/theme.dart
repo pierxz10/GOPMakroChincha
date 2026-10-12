@@ -8,6 +8,11 @@ abstract final class MakroColors {
   static const muted = Color(0xFF566580);
   static const line = Color(0xFFDCE5F4);
   static const softBlue = Color(0xFFEAF0FF);
+  static const success = Color(0xFF096846);
+  static const softSuccess = Color(0xFFEAF7F0);
+  static const warning = Color(0xFF805A00);
+  static const softWarning = Color(0xFFFFF7DB);
+  static const error = Color(0xFFAA213D);
 }
 
 ThemeData buildAppTheme() {
@@ -15,6 +20,30 @@ ThemeData buildAppTheme() {
     useMaterial3: true,
     fontFamily: 'Roboto',
     scaffoldBackgroundColor: MakroColors.page,
+    textTheme: const TextTheme(
+      headlineLarge: TextStyle(
+        fontSize: 40,
+        height: 1.2,
+        fontWeight: FontWeight.w700,
+      ),
+      headlineMedium: TextStyle(
+        fontSize: 28,
+        height: 1.28,
+        fontWeight: FontWeight.w700,
+      ),
+      titleLarge: TextStyle(
+        fontSize: 20,
+        height: 1.4,
+        fontWeight: FontWeight.w700,
+      ),
+      titleMedium: TextStyle(
+        fontSize: 16,
+        height: 1.5,
+        fontWeight: FontWeight.w500,
+      ),
+      bodyMedium: TextStyle(fontSize: 14, height: 1.57),
+      bodySmall: TextStyle(fontSize: 12, height: 1.5),
+    ).apply(bodyColor: MakroColors.ink, displayColor: MakroColors.ink),
     colorScheme: ColorScheme.fromSeed(seedColor: MakroColors.blue).copyWith(
       primary: MakroColors.blue,
       surface: Colors.white,
@@ -38,6 +67,14 @@ ThemeData buildAppTheme() {
         backgroundColor: MakroColors.yellow,
         foregroundColor: MakroColors.blue,
         minimumSize: const Size(48, 48),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)),
+      ),
+    ),
+    outlinedButtonTheme: OutlinedButtonThemeData(
+      style: OutlinedButton.styleFrom(
+        minimumSize: const Size(48, 48),
+        side: const BorderSide(color: MakroColors.line),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)),
       ),
     ),
     inputDecorationTheme: InputDecorationTheme(

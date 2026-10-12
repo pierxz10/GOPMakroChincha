@@ -1,56 +1,65 @@
 # GOP Makro Chincha · Frontend Flutter
 
-Base inicial del Sprint 2: listado de objetos, búsqueda y filtros. Plataformas objetivo: **Android y web**.
+Entrega del 12/10/2026: **Acceso, Dashboard, Objetos y Búsqueda/filtros**, con datos de demostración y adaptación a móvil, tablet y escritorio. Rama de trabajo: `2026-10-12`.
 
-## Estado de esta entrega
+## Ejecutar en Chrome
 
-- Pantalla de objetos con datos ficticios claramente identificados.
-- Búsqueda local por nombre, código, descripción y ubicación, tolerante a mayúsculas y tildes.
-- Filtros combinables por categoría y estado; limpieza de búsqueda y filtros.
-- Estados de carga, error con reintento y colección vacía.
-- Contenido desplazable, chips que fluyen según el ancho y ancho máximo en escritorio.
-- Repositorio inyectable para conectar la API cuando se acuerde con backend.
-
-El módulo incorpora el logo, la paleta y referencias de composición del paquete de diseño entregado, además de filtros por lugar y fechas. La comparación visual con los frames sigue pendiente. Categorías, estados y campos de ejemplo requieren confirmación con diseño y backend. Véase `docs/recursos-sprint-2.md` para el alcance y las limitaciones.
-
-## Ejecutar
-
-Entorno encontrado: Flutter **3.47.6**, Dart **3.13.5**. El paquete requiere Dart >=3.11 y Flutter >=3.41; esos mínimos todavía no se han probado.
-
-Desde una terminal local en este repositorio:
+Desde la carpeta del repositorio:
 
 ```powershell
 flutter pub get
 flutter run -d chrome
 ```
 
-Para Android, iniciar un emulador o conectar un dispositivo con depuración USB:
+El programa comienza en Acceso. Pulsa uno de los perfiles de demostración para completar usuario y contraseña y después **Ingresar**. Para clientes, pulsa **Consultar objetos sin cuenta**.
 
-```powershell
-flutter devices
-flutter run -d <id-del-dispositivo>
-```
+| Perfil | Usuario | Contraseña de prueba |
+| --- | --- | --- |
+| Administrador | admin.demo | MakroDemo2026 |
+| Supervisor | supervisor.demo | MakroDemo2026 |
+| Responsable | responsable.demo | MakroDemo2026 |
+| Cliente / visitante | No requiere cuenta | No requiere contraseña |
 
-No se han configurado identificadores definitivos ni firma de producción. `com.example.gop_makro_chincha` es provisional. Los iconos son los predeterminados de Flutter.
+Las cuentas son ficticias y están diseñadas exclusivamente para la revisión del frontend.
+
+## Alcance funcional
+
+- Inicio y cierre de sesión local de demostración; mensajes por campos vacíos o credenciales incorrectas.
+- Navegación entre las cuatro pantallas, vuelta desde filtros y bloqueo de rutas internas para visitantes.
+- Seis objetos del paquete de diseño con estados Disponible, En reclamo y Entregado.
+- Dashboard calculado desde los mismos objetos: 6 registrados, 4 en custodia, 1 en reclamo y 2 entregados.
+- Búsqueda por texto y filtros combinables de categoría, estado, lugar y fechas inclusivas.
+- Limpieza de filtros, conservación al navegar/redimensionar, carga, error/reintento y estado vacío.
+- Detalle en diálogo y registro validado de hallazgos en memoria para los tres roles internos. El registro actualiza listado e indicadores.
+- Catálogo público de objetos disponibles, sin documentos, descripción identificadora, código interno, hora exacta o lugar del hallazgo. No permite registro ni consulta del dashboard.
+- Logo original, SVG del paquete, colores y tipografía del diseño; componentes que crecen según el texto y permiten desplazamiento.
+
+Reclamos, Reportes y Administración aparecen como secciones futuras cuando el perfil corresponde, pero sus controles están deshabilitados y no se presentan como módulos implementados. La matriz propuesta está en `docs/permisos-demo.md`.
+
+## Responsive
+
+Escritorio: navegación lateral y tres columnas de objetos. Tablet: navegación lateral compacta y dos columnas. Móvil: navegación inferior para personal, tarjetas compactas de una columna y formularios apilados. Con texto ampliado se reducen columnas y se permite desplazamiento.
+
+Referencias visuales: 1440×1000, 834×1112 y 390×844. Las pruebas también incluyen 320×568 y texto al doble de tamaño.
 
 ## Estructura
 
 ```text
-lib/
-  main.dart
-  app/                         Aplicación y tema
-  shared/widgets/              Contenedor responsive
-  features/objects/
-    models/                    Modelo provisional y búsqueda
-    data/                      Contrato de repositorio y datos de demostración
-    presentation/              Pantalla, controlador y widgets
-test/features/objects/         Pruebas de lógica e interfaz
-docs/                          Alcance y coordinación del sprint
-android/                       Configuración Android/Kotlin
-web/                           Entrada web
+lib/app/app.dart                         Arranque, sesión compartida y rutas protegidas
+lib/app/app_shell.dart                   Cabecera y navegación responsive
+lib/app/theme.dart                       Tema y colores
+lib/features/auth/                      Acceso y roles de demostración
+lib/features/dashboard/                 Resumen e indicadores
+lib/features/objects/models/            Modelo y proyección pública
+lib/features/objects/data/               Contrato de repositorio y datos ficticios
+lib/features/objects/presentation/       Listado, filtros, controlador y diálogos
+lib/shared/widgets/                      Marca, iconos y componentes comunes
+test/                                    Pruebas de permisos, lógica y pantallas
 ```
 
-## Validar antes de integrar
+## Validación
+
+Entorno validado: Flutter 3.47.6 y Dart 3.13.5. `flutter analyze` sin problemas; **52 pruebas aprobadas**. `flutter build web --no-pub` completado. Se comprobó en Chrome el acceso interno, el catálogo público y filtros combinados con fechas; hay capturas de las cuatro pantallas a tamaños de escritorio, tablet y móvil.
 
 ```powershell
 dart format lib test
@@ -60,10 +69,12 @@ flutter build web
 flutter build apk --debug
 ```
 
-Las pruebas cubren búsqueda y filtros combinados, limpieza, reintento, eliminación durante una carga, redimensionamiento y tamaños 320×568, 360×800, 768×1024, 1440×900 y 1920×1080 con texto a escala 1 y 2.
+La compilación y ejecución Android en dispositivo se documentan por separado en `docs/revision-2026-10-12.md`; no se consideran aprobadas por las pruebas de viewport de Chrome.
 
-**Validación local del 07/10/2026:** Airton ejecutó `flutter pub get`, `flutter analyze`, `flutter test` y `flutter run -d chrome`. El análisis terminó sin problemas, las **19 pruebas pasaron** y la aplicación inició en Chrome; se aportó una captura del listado. Se incluye `pubspec.lock` para fijar las dependencias resueltas.
+## Límites de la demostración
 
-Quedan pendientes las compilaciones de distribución, la ejecución en Android y la comparación visual con Figma. El runtime de Flutter/Dart sigue sin poder ejecutarse dentro del aislamiento de Codex; los resultados anteriores corresponden al entorno local del desarrollador.
+No hay conexión con la API, autenticación real ni persistencia. Los nuevos registros desaparecen al reiniciar o recargar la aplicación. Las restricciones de interfaz y rutas simulan permisos; el backend deberá autenticar usuarios, autorizar operaciones y devolver una respuesta pública limitada. No utilizar esta demostración como control de acceso de producción.
 
-Las carpetas Android/web se prepararon a partir de las plantillas oficiales del SDK instalado, al fallar `flutter create`. Gradle, AGP y Kotlin coinciden con ese SDK. Android requiere que `flutter run` genere `android/local.properties` con las rutas locales del SDK; ese archivo se ignora en Git. No se modificó código del SDK.
+Se reconstruyó la composición con las capturas entregadas y el paquete `design_resources/`, porque el conector de Figma alcanzó su límite durante la implementación. Las variantes públicas y los permisos son propuestas adicionales para revisar con el docente y el equipo.
+
+`pubspec.lock` fija las dependencias. El identificador Android `com.example.gop_makro_chincha` y la firma de depuración siguen siendo provisionales.

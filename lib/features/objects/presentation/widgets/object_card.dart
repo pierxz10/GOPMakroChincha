@@ -1,93 +1,109 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-
-import '../../models/lost_object.dart';
 import '../../../../app/theme.dart';
+import '../../../../shared/widgets/makro_widgets.dart';
+import '../../models/lost_object.dart';
 
 class ObjectCard extends StatelessWidget {
-  const ObjectCard({required this.object, super.key});
-
+  const ObjectCard({
+    required this.object,
+    required this.onDetail,
+    this.compact = false,
+    this.isPublic = false,
+    super.key,
+  });
   final LostObject object;
-
+  final VoidCallback onDetail;
+  final bool compact;
+  final bool isPublic;
   @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    return Card.outlined(
-      margin: EdgeInsets.zero,
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              width: double.infinity,
-              padding: const EdgeInsets.symmetric(vertical: 24),
-              decoration: BoxDecoration(
-                color: MakroColors.softBlue,
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Center(
-                child: SvgPicture.asset(
-                  switch (object.category) {
-                    ObjectCategory.electronics => 'assets/icons/smartphone.svg',
-                    ObjectCategory.documents => 'assets/icons/file-check-2.svg',
-                    ObjectCategory.accessories => 'assets/icons/backpack.svg',
-                    ObjectCategory.other => 'assets/icons/package-search.svg',
-                  },
-                  colorFilter: const ColorFilter.mode(
-                    MakroColors.blue,
-                    BlendMode.srcIn,
-                  ),
-                ),
-              ),
-            ),
-            const SizedBox(height: 16),
-            Text(object.reference, style: theme.textTheme.labelMedium),
-            const SizedBox(height: 4),
-            Text(object.name, style: theme.textTheme.titleLarge),
-            const SizedBox(height: 8),
-            Text(object.description),
-            const SizedBox(height: 12),
-            Wrap(
-              spacing: 16,
-              runSpacing: 8,
-              children: [
-                Text('Categoría: ${object.category.label}'),
-                Container(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 10,
-                    vertical: 6,
-                  ),
-                  decoration: BoxDecoration(
-                    color: object.status == ObjectStatus.returned
-                        ? MakroColors.softBlue
-                        : const Color(0xFFEAF7F0),
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: Text(
-                    'Estado: ${object.status.label}',
-                    style: TextStyle(
-                      color: object.status == ObjectStatus.returned
-                          ? MakroColors.blue
-                          : const Color(0xFF096846),
-                      fontWeight: FontWeight.w600,
+  Widget build(BuildContext context) => Card(
+    margin: EdgeInsets.zero,
+    clipBehavior: Clip.antiAlias,
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        if (!compact)
+          Container(
+            height: 120,
+            color: MakroColors.softBlue,
+            child: Center(child: MakroIcon(object.iconName, size: 56)),
+          ),
+        Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              if (compact)
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      width: 64,
+                      padding: const EdgeInsets.symmetric(vertical: 24),
+                      decoration: BoxDecoration(
+                        color: MakroColors.softBlue,
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                      child: Center(
+                        child: MakroIcon(object.iconName, size: 32),
+                      ),
                     ),
+                    const SizedBox(width: 16),
+                    Expanded(child: _info(context)),
+                  ],
+                )
+              else
+                _info(context),
+              const SizedBox(height: 12),
+              OutlinedButton(
+                onPressed: onDetail,
+                style: OutlinedButton.styleFrom(
+                  side: const BorderSide(color: MakroColors.line),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(6),
                   ),
+                  minimumSize: const Size(48, 48),
                 ),
-              ],
-            ),
-            const SizedBox(height: 8),
-            Text('Ubicación: ${object.location}'),
-            if (object.foundAt != null) ...[
-              const SizedBox(height: 8),
-              Text(
-                'Hallazgo: ${object.foundAt!.day}/${object.foundAt!.month}/${object.foundAt!.year}',
-                style: const TextStyle(color: MakroColors.muted),
+                child: const Text('Ver detalle'),
               ),
             ],
-          ],
+          ),
         ),
+      ],
+    ),
+  );
+  Widget _info(BuildContext context) => Column(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: [
+      StatusBadge(object.status),
+      const SizedBox(height: 8),
+      Text(
+        object.name,
+        style: Theme.of(
+          context,
+        ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700),
       ),
-    );
-  }
+      const SizedBox(height: 4),
+      Text(
+        isPublic
+            ? object.category.label
+            : '${object.reference} · ${object.category.label}',
+        style: const TextStyle(fontSize: 12, color: MakroColors.muted),
+      ),
+      if (!isPublic) ...[
+        const SizedBox(height: 6),
+        Text(
+          object.location,
+          style: const TextStyle(fontSize: 12, color: MakroColors.muted),
+        ),
+      ],
+      if (object.foundAt != null) ...[
+        const SizedBox(height: 4),
+        Text(
+          formatDate(object.foundAt!, withTime: !isPublic),
+          style: const TextStyle(fontSize: 12, color: MakroColors.muted),
+        ),
+      ],
+    ],
+  );
 }

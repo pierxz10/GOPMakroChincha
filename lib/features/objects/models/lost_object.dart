@@ -10,8 +10,9 @@ enum ObjectCategory {
 }
 
 enum ObjectStatus {
-  inCustody('En custodia'),
-  returned('Devuelto');
+  inCustody('Disponible'),
+  claimed('En reclamo'),
+  returned('Entregado');
 
   const ObjectStatus(this.label);
   final String label;
@@ -26,6 +27,7 @@ class LostObject {
     required this.category,
     required this.status,
     this.foundAt,
+    this.iconName = 'package-search',
   });
 
   final String reference;
@@ -35,6 +37,30 @@ class LostObject {
   final ObjectCategory category;
   final ObjectStatus status;
   final DateTime? foundAt;
+  final String iconName;
+
+  // Proyección pública: sin descripción, referencia interna o ubicación.
+  LostObject publicView(int index) {
+    final label = switch (iconName) {
+      'backpack' => 'Mochila encontrada',
+      'key-round' => 'Llaves encontradas',
+      'wallet' => 'Billetera encontrada',
+      'smartphone' => 'Teléfono encontrado',
+      _ => 'Objeto encontrado',
+    };
+    return LostObject(
+      reference: 'public-$index',
+      name: label,
+      description: 'Consulta en Atención al Cliente de Makro Chincha.',
+      location: '',
+      category: category,
+      status: ObjectStatus.inCustody,
+      iconName: iconName,
+      foundAt: foundAt == null
+          ? null
+          : DateTime(foundAt!.year, foundAt!.month, foundAt!.day),
+    );
+  }
 
   bool matches({
     required String query,
