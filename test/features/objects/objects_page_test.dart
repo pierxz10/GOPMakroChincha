@@ -31,9 +31,7 @@ void main() {
         await tester.pumpAndSettle();
         if (scale != 1) {
           tester.platformDispatcher.textScaleFactorTestValue = scale;
-          addTearDown(
-            tester.platformDispatcher.clearTextScaleFactorTestValue,
-          );
+          addTearDown(tester.platformDispatcher.clearTextScaleFactorTestValue);
           await tester.pumpAndSettle();
         }
         expect(tester.takeException(), isNull);
@@ -55,9 +53,7 @@ void main() {
     tester.view.physicalSize = const Size(1440, 900);
     addTearDown(tester.view.resetDevicePixelRatio);
     addTearDown(tester.view.resetPhysicalSize);
-    await tester.pumpWidget(
-      const GopApp(repository: DemoObjectsRepository()),
-    );
+    await tester.pumpWidget(const GopApp(repository: DemoObjectsRepository()));
     await tester.pumpAndSettle();
     await tester.tap(find.widgetWithText(ChoiceChip, 'Electrónicos'));
     await tester.enterText(
@@ -68,15 +64,16 @@ void main() {
     tester.view.physicalSize = const Size(360, 800);
     await tester.pumpAndSettle();
     expect(
-      tester.widget<TextField>(
-        find.byKey(const ValueKey('objects-search')),
-      ).controller!.text,
+      tester
+          .widget<TextField>(find.byKey(const ValueKey('objects-search')))
+          .controller!
+          .text,
       'telefono',
     );
     expect(
-      tester.widget<ChoiceChip>(
-        find.widgetWithText(ChoiceChip, 'Electrónicos'),
-      ).selected,
+      tester
+          .widget<ChoiceChip>(find.widgetWithText(ChoiceChip, 'Electrónicos'))
+          .selected,
       isTrue,
     );
     await tester.scrollUntilVisible(
@@ -91,9 +88,7 @@ void main() {
   testWidgets('muestra un resultado vacío y permite limpiar la búsqueda', (
     tester,
   ) async {
-    await tester.pumpWidget(
-      const GopApp(repository: DemoObjectsRepository()),
-    );
+    await tester.pumpWidget(const GopApp(repository: DemoObjectsRepository()));
     await tester.pumpAndSettle();
     await tester.enterText(
       find.byKey(const ValueKey('objects-search')),
@@ -103,10 +98,18 @@ void main() {
     final message = find.text(
       'No encontramos objetos con esa búsqueda y esos filtros.',
     );
-    await tester.ensureVisible(message);
+    await tester.scrollUntilVisible(
+      message,
+      150,
+      scrollable: find.byType(Scrollable).first,
+    );
     expect(message, findsOneWidget);
     final clear = find.text('Limpiar filtros');
-    await tester.ensureVisible(clear);
+    await tester.scrollUntilVisible(
+      clear,
+      -150,
+      scrollable: find.byType(Scrollable).first,
+    );
     await tester.tap(clear);
     await tester.pumpAndSettle();
     expect(find.text('6 objetos'), findsOneWidget);
@@ -115,10 +118,13 @@ void main() {
   testWidgets('distingue una colección vacía de una búsqueda sin resultados', (
     tester,
   ) async {
-    await tester.pumpWidget(
-      const GopApp(repository: _EmptyRepository()),
-    );
+    await tester.pumpWidget(const GopApp(repository: _EmptyRepository()));
     await tester.pumpAndSettle();
+    await tester.scrollUntilVisible(
+      find.text('Aún no hay objetos registrados.'),
+      150,
+      scrollable: find.byType(Scrollable).first,
+    );
     expect(find.text('Aún no hay objetos registrados.'), findsOneWidget);
   });
 }

@@ -11,7 +11,7 @@ Base inicial del Sprint 2: listado de objetos, búsqueda y filtros. Plataformas 
 - Contenido desplazable, chips que fluyen según el ancho y ancho máximo en escritorio.
 - Repositorio inyectable para conectar la API cuando se acuerde con backend.
 
-**El tema es Material provisional. No se ha implementado ni validado la apariencia de Figma.** El conector devolvió un límite de consultas. Categorías, estados y campos de ejemplo requieren confirmación con diseño y backend.
+El módulo incorpora el logo, la paleta y referencias de composición del paquete de diseño entregado, además de filtros por lugar y fechas. La comparación visual con los frames sigue pendiente. Categorías, estados y campos de ejemplo requieren confirmación con diseño y backend. Véase `docs/recursos-sprint-2.md` para el alcance y las limitaciones.
 
 ## Ejecutar
 

@@ -36,9 +36,8 @@ class ObjectFilters extends StatelessWidget {
               ChoiceChip(
                 label: Text(value.label),
                 selected: category == value,
-                onSelected: (_) => onCategoryChanged(
-                  category == value ? null : value,
-                ),
+                onSelected: (_) =>
+                    onCategoryChanged(category == value ? null : value),
               ),
           ],
         ),
@@ -58,9 +57,8 @@ class ObjectFilters extends StatelessWidget {
               ChoiceChip(
                 label: Text(value.label),
                 selected: status == value,
-                onSelected: (_) => onStatusChanged(
-                  status == value ? null : value,
-                ),
+                onSelected: (_) =>
+                    onStatusChanged(status == value ? null : value),
               ),
           ],
         ),

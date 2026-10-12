@@ -25,6 +25,7 @@ class LostObject {
     required this.location,
     required this.category,
     required this.status,
+    this.foundAt,
   });
 
   final String reference;
@@ -33,18 +34,38 @@ class LostObject {
   final String location;
   final ObjectCategory category;
   final ObjectStatus status;
+  final DateTime? foundAt;
 
   bool matches({
     required String query,
     ObjectCategory? category,
     ObjectStatus? status,
+    String location = '',
+    DateTime? from,
+    DateTime? until,
   }) {
     if (category != null && this.category != category) return false;
     if (status != null && this.status != status) return false;
+    if (!_normalize(location)
+        .trim()
+        .split(RegExp(r'\s+'))
+        .every((word) => _normalize(this.location).contains(word))) {
+      return false;
+    }
+    if (from != null && (foundAt == null || foundAt!.isBefore(from))) {
+      return false;
+    }
+    if (until != null &&
+        (foundAt == null ||
+            !foundAt!.isBefore(
+              DateTime(until.year, until.month, until.day + 1),
+            ))) {
+      return false;
+    }
     final normalizedQuery = _normalize(query).trim();
     if (normalizedQuery.isEmpty) return true;
     final searchable = _normalize(
-      '$reference $name $description $location ${this.category.label} '
+      '$reference $name $description ${this.location} ${this.category.label} '
       '${this.status.label}',
     );
     return normalizedQuery

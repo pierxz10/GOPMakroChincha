@@ -8,9 +8,10 @@ class DemoObjectsRepository implements ObjectsRepository {
   Future<List<LostObject>> loadObjects() async => objects;
 
   // Datos ficticios para desarrollar y verificar el frontend sin backend.
-  static const objects = [
+  static final objects = [
     LostObject(
       reference: 'OBJ-0001',
+      foundAt: DateTime(2026, 10, 1, 10, 30),
       name: 'Mochila azul',
       description: 'Mochila de tela con cierre frontal.',
       location: 'Área de cajas',
@@ -19,6 +20,7 @@ class DemoObjectsRepository implements ObjectsRepository {
     ),
     LostObject(
       reference: 'OBJ-0002',
+      foundAt: DateTime(2026, 10, 2, 10, 30),
       name: 'Teléfono móvil',
       description: 'Teléfono negro con funda transparente.',
       location: 'Atención al cliente',
@@ -27,6 +29,7 @@ class DemoObjectsRepository implements ObjectsRepository {
     ),
     LostObject(
       reference: 'OBJ-0003',
+      foundAt: DateTime(2026, 10, 3, 10, 30),
       name: 'Documento de identidad',
       description: 'Documento encontrado en la tienda.',
       location: 'Entrada principal',
@@ -35,6 +38,7 @@ class DemoObjectsRepository implements ObjectsRepository {
     ),
     LostObject(
       reference: 'OBJ-0004',
+      foundAt: DateTime(2026, 10, 4, 10, 30),
       name: 'Llaves',
       description: 'Juego de llaves con llavero rojo.',
       location: 'Estacionamiento',
@@ -43,6 +47,7 @@ class DemoObjectsRepository implements ObjectsRepository {
     ),
     LostObject(
       reference: 'OBJ-0005',
+      foundAt: DateTime(2026, 10, 5, 10, 30),
       name: 'Audífonos',
       description: 'Audífonos inalámbricos en su estuche.',
       location: 'Área de cajas',
@@ -51,6 +56,7 @@ class DemoObjectsRepository implements ObjectsRepository {
     ),
     LostObject(
       reference: 'OBJ-0006',
+      foundAt: DateTime(2026, 10, 6, 10, 30),
       name: 'Paraguas',
       description: 'Paraguas plegable de color gris.',
       location: 'Entrada principal',

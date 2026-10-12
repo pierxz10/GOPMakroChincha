@@ -14,6 +14,12 @@ class ObjectsController extends ChangeNotifier {
   bool _isLoading = false;
   bool _hasError = false;
   bool _disposed = false;
+  String _location = '';
+  DateTime? _from;
+  DateTime? _until;
+  String get location => _location;
+  DateTime? get from => _from;
+  DateTime? get until => _until;
 
   String get query => _query;
   ObjectCategory? get category => _category;
@@ -21,7 +27,11 @@ class ObjectsController extends ChangeNotifier {
   bool get isLoading => _isLoading;
   bool get hasError => _hasError;
   bool get hasFilters =>
-      _query.isNotEmpty || _category != null || _status != null;
+      _query.isNotEmpty ||
+      _category != null ||
+      _status != null ||
+      _location.isNotEmpty ||
+      _from != null;
 
   List<LostObject> get visibleObjects => List.unmodifiable(
     _objects.where(
@@ -29,6 +39,9 @@ class ObjectsController extends ChangeNotifier {
         query: _query,
         category: _category,
         status: _status,
+        location: _location,
+        from: _from,
+        until: _until,
       ),
     ),
   );
@@ -70,6 +83,9 @@ class ObjectsController extends ChangeNotifier {
   }
 
   void clearFilters() {
+    _location = '';
+    _from = null;
+    _until = null;
     _query = '';
     _category = null;
     _status = null;
@@ -80,5 +96,16 @@ class ObjectsController extends ChangeNotifier {
   void dispose() {
     _disposed = true;
     super.dispose();
+  }
+
+  void setLocation(String value) {
+    _location = value;
+    notifyListeners();
+  }
+
+  void setDateRange(DateTime? from, DateTime? until) {
+    _from = from;
+    _until = until;
+    notifyListeners();
   }
 }

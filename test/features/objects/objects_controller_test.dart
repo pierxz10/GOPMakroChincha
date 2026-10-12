@@ -28,6 +28,20 @@ void main() {
     expect(controller.visibleObjects.length, 2);
   });
 
+  test('combina lugar y fechas inclusivas y permite limpiarlos', () async {
+    await controller.load();
+    controller.setLocation('AREA cajas');
+    controller.setDateRange(DateTime(2026, 10, 1), DateTime(2026, 10, 1));
+    expect(controller.visibleObjects.single.reference, 'OBJ-0001');
+    controller.setDateRange(DateTime(2026, 10, 5), DateTime(2026, 10, 5));
+    expect(controller.visibleObjects.single.reference, 'OBJ-0005');
+    controller.setQuery('mochila');
+    expect(controller.visibleObjects, isEmpty);
+    controller.clearFilters();
+    expect(controller.hasFilters, isFalse);
+    expect(controller.visibleObjects.length, 6);
+  });
+
   test('combina categoría, estado y búsqueda como una intersección', () async {
     await controller.load();
     controller.setCategory(ObjectCategory.electronics);
@@ -59,14 +73,17 @@ void main() {
     expect(retryController.visibleObjects.length, 6);
   });
 
-  test('completar una carga tras dispose no notifica al widget eliminado', () async {
-    final repository = _PendingRepository();
-    final pendingController = ObjectsController(repository);
-    final load = pendingController.load();
-    pendingController.dispose();
-    repository.result.complete(DemoObjectsRepository.objects);
-    await expectLater(load, completes);
-  });
+  test(
+    'completar una carga tras dispose no notifica al widget eliminado',
+    () async {
+      final repository = _PendingRepository();
+      final pendingController = ObjectsController(repository);
+      final load = pendingController.load();
+      pendingController.dispose();
+      repository.result.complete(DemoObjectsRepository.objects);
+      await expectLater(load, completes);
+    },
+  );
 }
 
 class _FailOnceRepository implements ObjectsRepository {

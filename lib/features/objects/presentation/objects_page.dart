@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../shared/widgets/responsive_content.dart';
+import '../../../app/theme.dart';
 import '../data/objects_repository.dart';
 import 'objects_controller.dart';
 import 'widgets/object_card.dart';
@@ -18,6 +19,7 @@ class ObjectsPage extends StatefulWidget {
 class _ObjectsPageState extends State<ObjectsPage> {
   late final ObjectsController _controller;
   final _search = TextEditingController();
+  final _location = TextEditingController();
 
   @override
   void initState() {
@@ -29,11 +31,13 @@ class _ObjectsPageState extends State<ObjectsPage> {
   void dispose() {
     _controller.dispose();
     _search.dispose();
+    _location.dispose();
     super.dispose();
   }
 
   void _clearFilters() {
     _search.clear();
+    _location.clear();
     _controller.clearFilters();
   }
 
@@ -41,28 +45,72 @@ class _ObjectsPageState extends State<ObjectsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Objetos perdidos', overflow: TextOverflow.ellipsis),
+        title: Row(
+          children: [
+            Image.asset(
+              'assets/logo/makro-logo.png',
+              width: 104,
+              semanticLabel: 'Makro',
+            ),
+            const SizedBox(width: 16),
+            const Expanded(
+              child: Text('Chincha', overflow: TextOverflow.ellipsis),
+            ),
+          ],
+        ),
       ),
       body: ResponsiveContent(
         child: ListenableBuilder(
           listenable: _controller,
           builder: (context, _) {
             final objects = _controller.visibleObjects;
-            final showMessage = _controller.isLoading ||
-                _controller.hasError || objects.isEmpty;
-            return ListView.separated(
-              padding: const EdgeInsets.symmetric(vertical: 16),
-              keyboardDismissBehavior:
-                  ScrollViewKeyboardDismissBehavior.onDrag,
-              itemCount: showMessage ? 2 : objects.length + 1,
-              separatorBuilder: (context, index) => const SizedBox(height: 12),
-              itemBuilder: (context, index) {
-                if (index == 0) return _buildHeader(context, objects.length);
-                if (showMessage) return _buildMessage();
-                final object = objects[index - 1];
-                return ObjectCard(
-                  key: ValueKey(object.reference),
-                  object: object,
+            final showMessage =
+                _controller.isLoading ||
+                _controller.hasError ||
+                objects.isEmpty;
+            return LayoutBuilder(
+              builder: (context, constraints) {
+                final scaled = MediaQuery.textScalerOf(context).scale(14) / 14;
+                final columns = scaled > 1.4
+                    ? 1
+                    : constraints.maxWidth >= 1000
+                    ? 3
+                    : constraints.maxWidth >= 600
+                    ? 2
+                    : 1;
+                final rows = (objects.length / columns).ceil();
+                return ListView.separated(
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  keyboardDismissBehavior:
+                      ScrollViewKeyboardDismissBehavior.onDrag,
+                  itemCount: showMessage ? 2 : rows + 1,
+                  separatorBuilder: (context, index) =>
+                      const SizedBox(height: 12),
+                  itemBuilder: (context, index) {
+                    if (index == 0) {
+                      return _buildHeader(context, objects.length);
+                    }
+                    if (showMessage) return _buildMessage();
+                    final start = (index - 1) * columns;
+                    return Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        for (var offset = 0; offset < columns; offset++) ...[
+                          if (offset > 0) const SizedBox(width: 16),
+                          Expanded(
+                            child: start + offset < objects.length
+                                ? ObjectCard(
+                                    key: ValueKey(
+                                      objects[start + offset].reference,
+                                    ),
+                                    object: objects[start + offset],
+                                  )
+                                : const SizedBox.shrink(),
+                          ),
+                        ],
+                      ],
+                    );
+                  },
                 );
               },
             );
@@ -76,9 +124,19 @@ class _ObjectsPageState extends State<ObjectsPage> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('Makro · Chincha', style: Theme.of(context).textTheme.titleMedium),
+        Text(
+          'Objetos perdidos',
+          style: Theme.of(
+            context,
+          ).textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold),
+        ),
         const SizedBox(height: 8),
         const Text('Datos de demostración'),
+        const SizedBox(height: 8),
+        const Text(
+          'Encuentra y consulta los objetos hallados en la tienda.',
+          style: TextStyle(color: MakroColors.muted),
+        ),
         const SizedBox(height: 20),
         TextField(
           key: const ValueKey('objects-search'),
@@ -107,6 +165,42 @@ class _ObjectsPageState extends State<ObjectsPage> {
           status: _controller.status,
           onCategoryChanged: _controller.setCategory,
           onStatusChanged: _controller.setStatus,
+        ),
+        const SizedBox(height: 20),
+        TextField(
+          key: const ValueKey('objects-location'),
+          controller: _location,
+          onChanged: _controller.setLocation,
+          decoration: const InputDecoration(
+            labelText: 'Lugar del hallazgo',
+            hintText: 'Ej. Área de cajas',
+            prefixIcon: Icon(Icons.place_outlined),
+          ),
+        ),
+        const SizedBox(height: 12),
+        OutlinedButton.icon(
+          onPressed: () async {
+            final range = await showDateRangePicker(
+              context: context,
+              firstDate: DateTime(2000),
+              lastDate: DateTime.now(),
+              initialDateRange: _controller.from == null
+                  ? null
+                  : DateTimeRange(
+                      start: _controller.from!,
+                      end: _controller.until!,
+                    ),
+              helpText: 'Fecha del hallazgo',
+            );
+            if (!mounted || range == null) return;
+            _controller.setDateRange(range.start, range.end);
+          },
+          icon: const Icon(Icons.calendar_month_outlined),
+          label: Text(
+            _controller.from == null
+                ? 'Filtrar por fechas'
+                : '${_date(_controller.from!)} — ${_date(_controller.until!)}',
+          ),
         ),
         const SizedBox(height: 12),
         Wrap(
@@ -163,4 +257,7 @@ class _ObjectsPageState extends State<ObjectsPage> {
       ),
     );
   }
+
+  String _date(DateTime value) =>
+      '${value.day.toString().padLeft(2, '0')}/${value.month.toString().padLeft(2, '0')}/${value.year}';
 }

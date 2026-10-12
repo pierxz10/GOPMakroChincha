@@ -1,0 +1,381 @@
+{
+  "schemaVersion": 1,
+  "source": "Destinos registrados al construir los mockups. Incluyen navegación global.",
+  "recordedDestinationsByViewport": {
+    "tablet": {
+      "login": [
+        "dashboard"
+      ],
+      "dashboard": [
+        "admin",
+        "claims",
+        "detail",
+        "login",
+        "objects",
+        "receipt",
+        "register",
+        "reports"
+      ],
+      "objects": [
+        "admin",
+        "claims",
+        "dashboard",
+        "detail",
+        "filters",
+        "login",
+        "register",
+        "reports"
+      ],
+      "filters": [
+        "admin",
+        "claims",
+        "dashboard",
+        "login",
+        "objects",
+        "reports"
+      ],
+      "register": [
+        "admin",
+        "claims",
+        "dashboard",
+        "detail",
+        "login",
+        "objects",
+        "reports"
+      ],
+      "detail": [
+        "admin",
+        "claim",
+        "claims",
+        "dashboard",
+        "login",
+        "objects",
+        "register",
+        "reports"
+      ],
+      "claims": [
+        "admin",
+        "claim",
+        "dashboard",
+        "login",
+        "objects",
+        "reports"
+      ],
+      "claim": [
+        "admin",
+        "approved",
+        "claims",
+        "dashboard",
+        "login",
+        "objects",
+        "reports"
+      ],
+      "approved": [
+        "admin",
+        "claims",
+        "dashboard",
+        "delivery",
+        "login",
+        "objects",
+        "reports"
+      ],
+      "delivery": [
+        "admin",
+        "approved",
+        "claims",
+        "confirm",
+        "dashboard",
+        "login",
+        "objects",
+        "reports"
+      ],
+      "confirm": [
+        "admin",
+        "approved",
+        "claims",
+        "dashboard",
+        "delivery",
+        "login",
+        "objects",
+        "receipt",
+        "reports"
+      ],
+      "receipt": [
+        "admin",
+        "claims",
+        "dashboard",
+        "login",
+        "objects",
+        "reports"
+      ],
+      "reports": [
+        "admin",
+        "claims",
+        "dashboard",
+        "login",
+        "objects"
+      ],
+      "admin": [
+        "claims",
+        "dashboard",
+        "login",
+        "objects",
+        "reports",
+        "userForm"
+      ],
+      "userForm": [
+        "admin",
+        "claims",
+        "dashboard",
+        "login",
+        "objects",
+        "reports"
+      ],
+      "loginError": [
+        "dashboard"
+      ],
+      "empty": [
+        "admin",
+        "claims",
+        "dashboard",
+        "filters",
+        "login",
+        "objects",
+        "register",
+        "reports"
+      ],
+      "failure": [
+        "admin",
+        "claims",
+        "dashboard",
+        "filters",
+        "loading",
+        "login",
+        "objects",
+        "register",
+        "reports"
+      ],
+      "loading": [
+        "admin",
+        "claims",
+        "dashboard",
+        "filters",
+        "login",
+        "objects",
+        "register",
+        "reports"
+      ],
+      "registerError": [
+        "admin",
+        "claims",
+        "dashboard",
+        "detail",
+        "login",
+        "objects",
+        "register",
+        "reports"
+      ]
+    },
+    "mobile": {
+      "login": [
+        "dashboard"
+      ],
+      "dashboard": [
+        "admin",
+        "claims",
+        "detail",
+        "objects",
+        "receipt",
+        "register",
+        "reports"
+      ],
+      "objects": [
+        "admin",
+        "claims",
+        "dashboard",
+        "detail",
+        "filters",
+        "register",
+        "reports"
+      ],
+      "filters": [
+        "admin",
+        "claims",
+        "dashboard",
+        "objects",
+        "reports"
+      ],
+      "register": [
+        "admin",
+        "claims",
+        "dashboard",
+        "detail",
+        "objects",
+        "reports"
+      ],
+      "detail": [
+        "admin",
+        "claim",
+        "claims",
+        "dashboard",
+        "objects",
+        "register",
+        "reports"
+      ],
+      "claims": [
+        "admin",
+        "claim",
+        "dashboard",
+        "objects",
+        "reports"
+      ],
+      "claim": [
+        "admin",
+        "approved",
+        "claims",
+        "dashboard",
+        "objects",
+        "reports"
+      ],
+      "approved": [
+        "admin",
+        "claims",
+        "dashboard",
+        "delivery",
+        "objects",
+        "reports"
+      ],
+      "delivery": [
+        "admin",
+        "approved",
+        "claims",
+        "confirm",
+        "dashboard",
+        "objects",
+        "reports"
+      ],
+      "confirm": [
+        "admin",
+        "approved",
+        "claims",
+        "dashboard",
+        "delivery",
+        "objects",
+        "receipt",
+        "reports"
+      ],
+      "receipt": [
+        "admin",
+        "claims",
+        "dashboard",
+        "objects",
+        "reports"
+      ],
+      "reports": [
+        "admin",
+        "claims",
+        "dashboard",
+        "objects"
+      ],
+      "admin": [
+        "claims",
+        "dashboard",
+        "objects",
+        "reports",
+        "userForm"
+      ],
+      "userForm": [
+        "admin",
+        "claims",
+        "dashboard",
+        "objects",
+        "reports"
+      ],
+      "loginError": [
+        "dashboard"
+      ],
+      "empty": [
+        "admin",
+        "claims",
+        "dashboard",
+        "filters",
+        "objects",
+        "register",
+        "reports"
+      ],
+      "failure": [
+        "admin",
+        "claims",
+        "dashboard",
+        "filters",
+        "loading",
+        "objects",
+        "register",
+        "reports"
+      ],
+      "loading": [
+        "admin",
+        "claims",
+        "dashboard",
+        "filters",
+        "objects",
+        "register",
+        "reports"
+      ],
+      "registerError": [
+        "admin",
+        "claims",
+        "dashboard",
+        "detail",
+        "objects",
+        "register",
+        "reports"
+      ]
+    }
+  },
+  "desktop": {
+    "status": "Conexiones aplicadas; la lista detallada devuelta por el conector quedó truncada.",
+    "referenceSource": "../reference/figma-views.js"
+  },
+  "globalSections": [
+    "dashboard",
+    "objects",
+    "claims",
+    "reports",
+    "admin"
+  ],
+  "mainJourney": [
+    "login",
+    "dashboard",
+    "objects",
+    "detail",
+    "claim",
+    "approved",
+    "delivery",
+    "confirm",
+    "receipt"
+  ],
+  "registrationJourney": [
+    "objects",
+    "register",
+    "detail"
+  ],
+  "recoveryJourney": [
+    "failure",
+    "loading",
+    "objects"
+  ],
+  "prototypeBehavior": {
+    "transition": "DISSOLVE",
+    "durationSeconds": 0.16,
+    "loadingTimeoutSeconds": 0.8
+  },
+  "limitations": [
+    "Estas conexiones simulan cambios de pantalla; no ejecutan autenticación ni persistencia.",
+    "Todas las tarjetas del prototipo abren el detalle ilustrativo de OBJ-001. En Flutter usar el ID del objeto seleccionado.",
+    "Los estados de error son frames separados; en Flutter pueden ser estados de los mismos widgets.",
+    "El paso por 0.8 segundos es una animación del prototipo; la implementación debe esperar la operación real o mock.",
+    "El botón Actualizar reporte necesita una operación real o mock aunque el prototipo permanezca en la misma pantalla.",
+    "Los puntos de inicio con nombre y el acceso a todos los escenarios siguen pendientes de revisión en Figma."
+  ]
+}

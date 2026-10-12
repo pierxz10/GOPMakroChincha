@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "isMock": true,
+  "isApprovedApiContract": false,
+  "localTimeZone": "America/Lima",
+  "notes": [
+    "Los datos proceden de ejemplos visuales; los esquemas son una propuesta de contexto para el front end.",
+    "Listado, reclamo, entrega y reportes ilustran momentos distintos; sincronizar estados y métricas al construir un repositorio mock.",
+    "Los documentos y teléfonos enmascarados son texto de presentación, no valores válidos para probar un formulario.",
+    "Los iconos sustituyen fotografías. El archivo mochila-negra.jpg mostrado en Figma no está incluido."
+  ],
+  "objectsListSnapshot": [
+    {
+      "id": "OBJ-001",
+      "name": "Mochila negra",
+      "category": "Accesorios",
+      "foundLocation": "Zona de cajas",
+      "status": "Available",
+      "statusLabel": "Disponible",
+      "foundAtLocal": "2026-10-05T10:35:00",
+      "icon": "backpack",
+      "photoAsset": null,
+      "description": "Mochila negra con dos compartimentos y cierre frontal.",
+      "custodyLocation": "Atención al Cliente · Estante A"
+    },
+    {
+      "id": "OBJ-002",
+      "name": "Llaves con llavero azul",
+      "category": "Accesorios",
+      "foundLocation": "Atención al Cliente",
+      "status": "Claim",
+      "statusLabel": "En reclamo",
+      "foundAtLocal": "2026-10-04T17:20:00",
+      "icon": "key-round",
+      "photoAsset": null,
+      "description": null,
+      "custodyLocation": null
+    },
+    {
+      "id": "OBJ-003",
+      "name": "Billetera marrón",
+      "category": "Accesorios",
+      "foundLocation": "Pasillo de abarrotes",
+      "status": "Available",
+      "statusLabel": "Disponible",
+      "foundAtLocal": "2026-10-04T15:10:00",
+      "icon": "wallet",
+      "photoAsset": null,
+      "description": null,
+      "custodyLocation": null
+    },
+    {
+      "id": "OBJ-004",
+      "name": "Celular gris",
+      "category": "Electrónica",
+      "foundLocation": "Ingreso principal",
+      "status": "Delivered",
+      "statusLabel": "Entregado",
+      "foundAtLocal": "2026-10-03T11:05:00",
+      "icon": "smartphone",
+      "photoAsset": null,
+      "description": null,
+      "custodyLocation": null
+    },
+    {
+      "id": "OBJ-005",
+      "name": "Mochila azul",
+      "category": "Accesorios",
+      "foundLocation": "Zona de estacionamiento",
+      "status": "Available",
+      "statusLabel": "Disponible",
+      "foundAtLocal": "2026-10-02T09:40:00",
+      "icon": "backpack",
+      "photoAsset": null,
+      "description": null,
+      "custodyLocation": null
+    },
+    {
+      "id": "OBJ-006",
+      "name": "Llaves plateadas",
+      "category": "Accesorios",
+      "foundLocation": "Zona de cajas",
+      "status": "Delivered",
+      "statusLabel": "Entregado",
+      "foundAtLocal": "2026-10-01T16:45:00",
+      "icon": "key-round",
+      "photoAsset": null,
+      "description": null,
+      "custodyLocation": null
+    }
+  ],
+  "dashboardIllustrativeSnapshot": {
+    "registered": 6,
+    "inCustody": 4,
+    "inClaim": 1,
+    "delivered": 2
+  },
+  "claimJourneyExample": {
+    "claimId": "RC-001",
+    "objectId": "OBJ-001",
+    "claimantName": "Persona de ejemplo",
+    "documentType": "DNI",
+    "documentMasked": "••••1234",
+    "phoneMasked": "9•• ••• •••",
+    "submittedAtLocal": "2026-10-05T11:10:00",
+    "claimedDescription": "Mochila negra con un compartimento frontal y dos cierres.",
+    "staffNotes": "Descripción revisada con el registro del hallazgo.",
+    "screenStages": [
+      "pendingReview",
+      "approved"
+    ]
+  },
+  "deliveryJourneyExample": {
+    "receiptId": "CE-001",
+    "claimId": "RC-001",
+    "objectId": "OBJ-001",
+    "recipientName": "Persona de ejemplo",
+    "documentMasked": "••••1234",
+    "deliveredAtLocal": "2026-10-05T11:35:00",
+    "deliveredByLabel": "Personal autorizado",
+    "notes": "Objeto entregado conforme a las características registradas."
+  },
+  "reportIllustrativeSnapshots": [
+    {
+      "month": "2026-08",
+      "registered": 7,
+      "delivered": 4
+    },
+    {
+      "month": "2026-09",
+      "registered": 9,
+      "delivered": 6
+    },
+    {
+      "month": "2026-10",
+      "registered": 6,
+      "delivered": 2
+    }
+  ],
+  "proposedRoles": [
+    "Atención al Cliente",
+    "Supervisor",
+    "Administrador"
+  ]
+}

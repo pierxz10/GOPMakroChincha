@@ -1,0 +1,35 @@
+await Promise.all(['Regular','Medium','Bold'].map(style=>figma.loadFontAsync({family:'Roboto',style})));
+const page=await figma.getNodeByIdAsync('0:1');
+await figma.setCurrentPageAsync(page);
+page.name='00 · Guía y componentes';
+if ((await figma.variables.getLocalVariableCollectionsAsync()).some(c=>c.name==='Makro/Primitives')) throw new Error('Foundations already exist; resume from ledger.');
+const createdNodeIds=[];
+const {collection:primitives,modeIds:primitiveModes}=await createVariableCollection('Makro/Primitives',['Default']);
+const {collection:semantics,modeIds:semanticModes}=await createVariableCollection('Makro/UI',['Default']);
+const {collection:geometry,modeIds:geometryModes}=await createVariableCollection('Makro/Geometry',['Default']);
+const rawColors={blue:'#0036B3',blueDark:'#002989',yellow:'#FFF200',pink:'#EE0099',pinkDark:'#B90078',white:'#FFFFFF',page:'#F5F8FF',ink:'#14234B',muted:'#566580',line:'#DCE5F4',softBlue:'#EAF0FF',softPink:'#FFF0FA',success:'#096846',softSuccess:'#EAF7F0',warning:'#805A00',softWarning:'#FFF7DB',error:'#AA213D',softError:'#FFF2F5',skeleton:'#DDE5F3',disabled:'#E6EAF1'};
+const {variables:primitiveVars}=await createSemanticTokens(primitives,primitiveModes,Object.entries(rawColors).map(([name,value])=>({name:'palette/'+name,type:'COLOR',values:{Default:value},scopes:[],codeSyntax:{WEB:'var(--mk-'+name.replace(/[A-Z]/g,m=>'-'+m.toLowerCase())+')'}})));
+const roles={brand:'blue',brandDark:'blueDark',brandYellow:'yellow',brandPink:'pink',action:'yellow',actionText:'blue',accentAction:'pinkDark',onAccent:'white',onBrand:'white',surface:'white',page:'page',text:'ink',muted:'muted',border:'line',selected:'softBlue',accentSoft:'softPink',success:'success',successSoft:'softSuccess',warning:'warning',warningSoft:'softWarning',error:'error',errorSoft:'softError',skeleton:'skeleton',disabled:'disabled'};
+const {variables:colorVars}=await createSemanticTokens(semantics,semanticModes,Object.entries(roles).map(([name,primitive])=>({name:'color/'+name,type:'COLOR',values:{Default:{type:'VARIABLE_ALIAS',id:primitiveVars['palette/'+primitive].id}},scopes:['FRAME_FILL','SHAPE_FILL','TEXT_FILL','STROKE_COLOR'],codeSyntax:{WEB:'var(--mk-color-'+name.replace(/[A-Z]/g,m=>'-'+m.toLowerCase())+')'}})));
+const {variables:spaceVars}=await createSemanticTokens(geometry,geometryModes,[...Object.entries({xs:4,sm:8,md:16,lg:24,xl:32,xxl:48}).map(([name,value])=>({name:'spacing/'+name,type:'FLOAT',values:{Default:value},scopes:['GAP'],codeSyntax:{WEB:'var(--mk-space-'+name+')'}})),...Object.entries({sm:6,md:12,lg:20}).map(([name,value])=>({name:'radius/'+name,type:'FLOAT',values:{Default:value},scopes:['CORNER_RADIUS'],codeSyntax:{WEB:'var(--mk-radius-'+name+')'}}))]);
+const definitions={Hero:{size:40,line:48,style:'Bold'},Heading:{size:28,line:36,style:'Bold'},Title:{size:20,line:28,style:'Bold'},Subhead:{size:16,line:24,style:'Medium'},Body:{size:14,line:22,style:'Regular'},Input:{size:16,line:24,style:'Regular'},Caption:{size:12,line:18,style:'Regular'},Label:{size:14,line:20,style:'Medium'},Metric:{size:32,line:40,style:'Bold'}};
+const textStyles={};
+for(const [name,def] of Object.entries(definitions)){const style=figma.createTextStyle();style.name='Makro/'+name;style.fontName={family:'Roboto',style:def.style};style.fontSize=def.size;style.lineHeight={unit:'PIXELS',value:def.line};style.letterSpacing={unit:'PIXELS',value:0};textStyles[name]=style.id;}
+const shadow=figma.createEffectStyle();shadow.name='Makro/Elevation/Card';shadow.effects=[{type:'DROP_SHADOW',color:{r:0,g:0.13,b:0.35,a:0.06},offset:{x:0,y:4},radius:16,spread:0,visible:true,blendMode:'NORMAL'}];
+const wireframes=figma.createPage();wireframes.name='01 · Wireframes';createdNodeIds.push(wireframes.id);
+const mockups=figma.createPage();mockups.name='02 · Mockups y prototipo';createdNodeIds.push(mockups.id);
+const bound=role=>figma.variables.setBoundVariableForPaint({type:'SOLID',color:{r:0,g:0,b:0}},'color',colorVars['color/'+role]);
+const guide=figma.createAutoLayout('VERTICAL');guide.name='Guía de primera entrega';guide.resize(1120,300);guide.layoutSizingHorizontal='FIXED';guide.layoutSizingVertical='HUG';guide.x=160;guide.y=160;guide.paddingLeft=guide.paddingRight=guide.paddingTop=guide.paddingBottom=32;guide.itemSpacing=16;guide.fills=[bound('surface')];guide.setBoundVariable('cornerRadius',spaceVars['radius/lg']);page.appendChild(guide);createdNodeIds.push(guide.id);
+const styleTasks=[];
+function text(content,role='Body',color='text'){const n=figma.createText();n.name=content.slice(0,70);n.fontName={family:'Roboto',style:definitions[role].style};n.fontSize=definitions[role].size;n.lineHeight={unit:'PIXELS',value:definitions[role].line};n.characters=content;n.textAutoResize='HEIGHT';n.resize(1056,n.height);n.fills=[bound(color)];guide.appendChild(n);styleTasks.push(n.setTextStyleIdAsync(textStyles[role]));createdNodeIds.push(n.id);return n;}
+text('Objetos perdidos · Makro Chincha','Hero','brand');
+text('Primera entrega · Diseño UI y navegación · Airton / Front End','Subhead');
+text('Contenido: wireframes, mockups editables y prototipo conectado en 1440 px (escritorio), 834 px (tablet) y 390 px (móvil). Las plataformas de ejecución en Flutter siguen por confirmar.');
+text('Referencia visual: captura proporcionada y www.makro.pe. Azul #0036B3 · amarillo #FFF200 · fucsia #EE0099. Logo: recurso del sitio oficial.');
+text('Tipografía: la web usa Gruffy / F37Gruffy. No está disponible en este conector: Roboto es la sustitución editable de esta entrega. La fuente oficial queda pendiente de incorporar en el entorno del equipo.');
+text('Los campos, estados, permisos, métricas y registros que se muestran son propuestas y datos de demostración. Deben validarse con el Product Owner y con Dayron; no representan políticas confirmadas de Makro.');
+text('Recorridos: acceso → inicio → objetos → registro / detalle → reclamo → entrega → constancia. Navegación adicional a reportes y administración. Botones de cancelación y regreso incluidos.');
+text('RNF-01: base visual para Flutter; su funcionamiento se verificará en implementación. RNF-02: acciones claras, componentes consistentes y feedback. RNF-07: composición específica en tres anchos.');
+text('Discovery: no existe código Flutter ni Code Connect en el material proporcionado; archivo inicial vacío. Kits disponibles revisados: Material 3. Se crean componentes locales para mantener las formas y colores de Makro, con Roboto como sustitución documentada.','Caption','muted');
+await Promise.all(styleTasks);
+return {createdNodeIds,mutatedNodeIds:[page.id],pages:{kit:page.id,wireframes:wireframes.id,mockups:mockups.id},variables:Object.fromEntries([...Object.entries(colorVars),...Object.entries(spaceVars)].map(([name,v])=>[name,v.id])),collections:{primitives:primitives.id,semantics:semantics.id,geometry:geometry.id},textStyles,definitions,effectStyle:shadow.id,guideId:guide.id,counts:{colors:Object.keys(colorVars).length,geometry:Object.keys(spaceVars).length,textStyles:Object.keys(textStyles).length},typography:{official:'Gruffy',used:'Roboto',substitution:true}};

@@ -1,0 +1,553 @@
+{
+  "schemaVersion": 1,
+  "fileKey": "O4gcl0QTTDip5xw2vHRThr",
+  "figmaUrl": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr",
+  "sourceSnapshotDate": "2026-10-05",
+  "preparedDate": "2026-10-07",
+  "liveFigmaRefreshPerformed": false,
+  "screenAndStateCount": 20,
+  "frameCount": 60,
+  "viewportsAreDesignReferences": true,
+  "screens": [
+    {
+      "key": "login",
+      "name": "Acceso",
+      "purpose": "Acceso del personal; usuario, contraseña, ingresar.",
+      "kind": "screen",
+      "parentScreen": null,
+      "frames": {
+        "desktop": {
+          "nodeId": "6:77",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-77",
+          "width": 1440,
+          "height": 1000
+        },
+        "tablet": {
+          "nodeId": "6:97",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-97",
+          "width": 834,
+          "height": 1112
+        },
+        "mobile": {
+          "nodeId": "6:117",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-117",
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "key": "dashboard",
+      "name": "Dashboard",
+      "purpose": "Resumen de gestión, registrar objeto y actividad reciente.",
+      "kind": "screen",
+      "parentScreen": null,
+      "frames": {
+        "desktop": {
+          "nodeId": "6:78",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-78",
+          "width": 1440,
+          "height": 1000
+        },
+        "tablet": {
+          "nodeId": "6:98",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-98",
+          "width": 834,
+          "height": 1112
+        },
+        "mobile": {
+          "nodeId": "6:118",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-118",
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "key": "objects",
+      "name": "Objetos",
+      "purpose": "Buscar, filtrar, registrar y abrir tarjetas de objetos.",
+      "kind": "screen",
+      "parentScreen": null,
+      "frames": {
+        "desktop": {
+          "nodeId": "6:79",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-79",
+          "width": 1440,
+          "height": 1000
+        },
+        "tablet": {
+          "nodeId": "6:99",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-99",
+          "width": 834,
+          "height": 1112
+        },
+        "mobile": {
+          "nodeId": "6:119",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-119",
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "key": "filters",
+      "name": "Búsqueda y filtros",
+      "purpose": "Texto, categoría, estado, fechas y lugar del hallazgo.",
+      "kind": "screen",
+      "parentScreen": null,
+      "frames": {
+        "desktop": {
+          "nodeId": "6:80",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-80",
+          "width": 1440,
+          "height": 1000
+        },
+        "tablet": {
+          "nodeId": "6:100",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-100",
+          "width": 834,
+          "height": 1112
+        },
+        "mobile": {
+          "nodeId": "6:120",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-120",
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "key": "register",
+      "name": "Registro de objeto",
+      "purpose": "Nombre, categoría, fecha/hora, descripción, hallazgo, custodia y fotografía.",
+      "kind": "screen",
+      "parentScreen": null,
+      "frames": {
+        "desktop": {
+          "nodeId": "6:81",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-81",
+          "width": 1440,
+          "height": 1000
+        },
+        "tablet": {
+          "nodeId": "6:101",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-101",
+          "width": 834,
+          "height": 1112
+        },
+        "mobile": {
+          "nodeId": "6:121",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-121",
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "key": "detail",
+      "name": "Detalle del objeto",
+      "purpose": "Foto, estado, datos del hallazgo, custodia, descripción e historial.",
+      "kind": "screen",
+      "parentScreen": null,
+      "frames": {
+        "desktop": {
+          "nodeId": "6:82",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-82",
+          "width": 1440,
+          "height": 1000
+        },
+        "tablet": {
+          "nodeId": "6:102",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-102",
+          "width": 834,
+          "height": 1112
+        },
+        "mobile": {
+          "nodeId": "6:122",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-122",
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "key": "claims",
+      "name": "Reclamos",
+      "purpose": "Lista de solicitudes, registrar y revisar reclamo.",
+      "kind": "screen",
+      "parentScreen": null,
+      "frames": {
+        "desktop": {
+          "nodeId": "6:83",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-83",
+          "width": 1440,
+          "height": 1000
+        },
+        "tablet": {
+          "nodeId": "6:103",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-103",
+          "width": 834,
+          "height": 1112
+        },
+        "mobile": {
+          "nodeId": "6:123",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-123",
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "key": "claim",
+      "name": "Registrar reclamo",
+      "purpose": "Identidad, contacto, descripción aportada, observaciones y revisión.",
+      "kind": "screen",
+      "parentScreen": null,
+      "frames": {
+        "desktop": {
+          "nodeId": "6:84",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-84",
+          "width": 1440,
+          "height": 1000
+        },
+        "tablet": {
+          "nodeId": "6:104",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-104",
+          "width": 834,
+          "height": 1112
+        },
+        "mobile": {
+          "nodeId": "6:124",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-124",
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "key": "approved",
+      "name": "Reclamo aprobado",
+      "purpose": "Resumen del reclamo aprobado y continuar a entrega.",
+      "kind": "screen",
+      "parentScreen": null,
+      "frames": {
+        "desktop": {
+          "nodeId": "6:85",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-85",
+          "width": 1440,
+          "height": 1000
+        },
+        "tablet": {
+          "nodeId": "6:105",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-105",
+          "width": 834,
+          "height": 1112
+        },
+        "mobile": {
+          "nodeId": "6:125",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-125",
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "key": "delivery",
+      "name": "Entrega",
+      "purpose": "Persona que recibe, documento, fecha/hora, personal y conformidad.",
+      "kind": "screen",
+      "parentScreen": null,
+      "frames": {
+        "desktop": {
+          "nodeId": "6:86",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-86",
+          "width": 1440,
+          "height": 1000
+        },
+        "tablet": {
+          "nodeId": "6:106",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-106",
+          "width": 834,
+          "height": 1112
+        },
+        "mobile": {
+          "nodeId": "6:126",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-126",
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "key": "confirm",
+      "name": "Confirmar entrega",
+      "purpose": "Confirmación previa al registro de entrega y constancia.",
+      "kind": "screen",
+      "parentScreen": null,
+      "frames": {
+        "desktop": {
+          "nodeId": "6:87",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-87",
+          "width": 1440,
+          "height": 1000
+        },
+        "tablet": {
+          "nodeId": "6:107",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-107",
+          "width": 834,
+          "height": 1112
+        },
+        "mobile": {
+          "nodeId": "6:127",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-127",
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "key": "receipt",
+      "name": "Constancia",
+      "purpose": "Constancia asociada al objeto, datos de entrega y espacios para firmas.",
+      "kind": "screen",
+      "parentScreen": null,
+      "frames": {
+        "desktop": {
+          "nodeId": "6:88",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-88",
+          "width": 1440,
+          "height": 1000
+        },
+        "tablet": {
+          "nodeId": "6:108",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-108",
+          "width": 834,
+          "height": 1112
+        },
+        "mobile": {
+          "nodeId": "6:128",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-128",
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "key": "reports",
+      "name": "Reportes",
+      "purpose": "Periodo, indicadores y comparación de registros/entregas.",
+      "kind": "screen",
+      "parentScreen": null,
+      "frames": {
+        "desktop": {
+          "nodeId": "6:89",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-89",
+          "width": 1440,
+          "height": 1000
+        },
+        "tablet": {
+          "nodeId": "6:109",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-109",
+          "width": 834,
+          "height": 1112
+        },
+        "mobile": {
+          "nodeId": "6:129",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-129",
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "key": "admin",
+      "name": "Administración",
+      "purpose": "Usuarios y perfiles propuestos; crear y editar acceso.",
+      "kind": "screen",
+      "parentScreen": null,
+      "frames": {
+        "desktop": {
+          "nodeId": "6:90",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-90",
+          "width": 1440,
+          "height": 1000
+        },
+        "tablet": {
+          "nodeId": "6:110",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-110",
+          "width": 834,
+          "height": 1112
+        },
+        "mobile": {
+          "nodeId": "6:130",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-130",
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "key": "userForm",
+      "name": "Nuevo usuario",
+      "purpose": "Nombre, correo, perfil, estado y nombre de usuario.",
+      "kind": "screen",
+      "parentScreen": null,
+      "frames": {
+        "desktop": {
+          "nodeId": "6:91",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-91",
+          "width": 1440,
+          "height": 1000
+        },
+        "tablet": {
+          "nodeId": "6:111",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-111",
+          "width": 834,
+          "height": 1112
+        },
+        "mobile": {
+          "nodeId": "6:131",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-131",
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "key": "loginError",
+      "name": "Acceso con error",
+      "purpose": "Estado de error del formulario de acceso.",
+      "kind": "state",
+      "parentScreen": "login",
+      "frames": {
+        "desktop": {
+          "nodeId": "6:92",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-92",
+          "width": 1440,
+          "height": 1000
+        },
+        "tablet": {
+          "nodeId": "6:112",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-112",
+          "width": 834,
+          "height": 1112
+        },
+        "mobile": {
+          "nodeId": "6:132",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-132",
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "key": "empty",
+      "name": "Sin resultados",
+      "purpose": "Estado sin coincidencias; limpiar filtros.",
+      "kind": "state",
+      "parentScreen": "objects",
+      "frames": {
+        "desktop": {
+          "nodeId": "6:93",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-93",
+          "width": 1440,
+          "height": 1000
+        },
+        "tablet": {
+          "nodeId": "6:113",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-113",
+          "width": 834,
+          "height": 1112
+        },
+        "mobile": {
+          "nodeId": "6:133",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-133",
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "key": "failure",
+      "name": "Error de conexión",
+      "purpose": "Error de conexión al cargar objetos; reintentar.",
+      "kind": "state",
+      "parentScreen": "objects",
+      "frames": {
+        "desktop": {
+          "nodeId": "6:94",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-94",
+          "width": 1440,
+          "height": 1000
+        },
+        "tablet": {
+          "nodeId": "6:114",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-114",
+          "width": 834,
+          "height": 1112
+        },
+        "mobile": {
+          "nodeId": "6:134",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-134",
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "key": "loading",
+      "name": "Cargando objetos",
+      "purpose": "Estado de carga de objetos; indicadores de espera.",
+      "kind": "state",
+      "parentScreen": "objects",
+      "frames": {
+        "desktop": {
+          "nodeId": "6:95",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-95",
+          "width": 1440,
+          "height": 1000
+        },
+        "tablet": {
+          "nodeId": "6:115",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-115",
+          "width": 834,
+          "height": 1112
+        },
+        "mobile": {
+          "nodeId": "6:135",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-135",
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "key": "registerError",
+      "name": "Registro con errores",
+      "purpose": "Errores de descripción y lugar en el formulario de objeto.",
+      "kind": "state",
+      "parentScreen": "register",
+      "frames": {
+        "desktop": {
+          "nodeId": "6:96",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-96",
+          "width": 1440,
+          "height": 1000
+        },
+        "tablet": {
+          "nodeId": "6:116",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-116",
+          "width": 834,
+          "height": 1112
+        },
+        "mobile": {
+          "nodeId": "6:136",
+          "url": "https://www.figma.com/design/O4gcl0QTTDip5xw2vHRThr?node-id=6-136",
+          "width": 390,
+          "height": 844
+        }
+      }
+    }
+  ]
+}

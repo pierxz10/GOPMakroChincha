@@ -1,0 +1,242 @@
+{
+  "package": "Makro_Recursos_Codex_Flutter",
+  "preparedDate": "2026-10-07",
+  "designSnapshotDate": "2026-10-05",
+  "fileKey": "O4gcl0QTTDip5xw2vHRThr",
+  "liveFigmaExport": false,
+  "flutterApplicationIncluded": false,
+  "frameCount": 60,
+  "iconCount": 31,
+  "files": [
+    {
+      "path": "PROMPT_PARA_CODEX.md",
+      "bytes": 3012,
+      "sha256": "6a67d4ea2e13f6742078e129671f6f8e6b57a799fab0ed08ba5822a19122fe78"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3293,
+      "sha256": "8ba824817cf6d1a4be01658a2ce2c9193d1fd8fb88b7b13f9ff5defff5dd2bcb"
+    },
+    {
+      "path": "assets/ATTRIBUTION.md",
+      "bytes": 1299,
+      "sha256": "1b1a0bf81c988f68c13f47ffdde217eb0910a379a6e9d34e8f3a8373423815eb"
+    },
+    {
+      "path": "assets/LICENSE-LUCIDE-FEATHER.txt",
+      "bytes": 2039,
+      "sha256": "172d453c0a89f233505f9a7bcaa6665c4b542635a3c06eb0838f4abdf515fef4"
+    },
+    {
+      "path": "assets/icons/arrow-left.svg",
+      "bytes": 344,
+      "sha256": "e31ed0af85ffbed2b54f78f37af197c3b84b24e776cba1d27613d6a9ad555a16"
+    },
+    {
+      "path": "assets/icons/arrow-right.svg",
+      "bytes": 344,
+      "sha256": "12b97a4d2821da556ce7df95f89df46deb94aa711d46b36a848be0de0ac2a7f0"
+    },
+    {
+      "path": "assets/icons/backpack.svg",
+      "bytes": 529,
+      "sha256": "74fd85ecfc2df237dc07c5acef7c6773d30e98172c955169bd07702f72f32d63"
+    },
+    {
+      "path": "assets/icons/calendar-days.svg",
+      "bytes": 569,
+      "sha256": "b91ebeecee30b2b6f9258f4fdf25c5fc91adbd265bf071139774dea2f9e51ac7"
+    },
+    {
+      "path": "assets/icons/chart-column.svg",
+      "bytes": 404,
+      "sha256": "8d756bca96703cf1acf2e5b066c3990bcdea37aec77d55e21d0f94b2eec66c81"
+    },
+    {
+      "path": "assets/icons/check.svg",
+      "bytes": 316,
+      "sha256": "538432eec072ceeccf5a7aacf347a2ad2bff9937d203dbd0b4f4245d7accd93c"
+    },
+    {
+      "path": "assets/icons/chevron-right.svg",
+      "bytes": 322,
+      "sha256": "fea488a3b60fd7738bbbf8ca98826ef5c0381347c5fd1048d45ee70a75a51cfe"
+    },
+    {
+      "path": "assets/icons/circle-alert.svg",
+      "bytes": 416,
+      "sha256": "2c65a5c03a73d3115ce493779f82af98d94f0d72facf1d97c61ea08566bb401c"
+    },
+    {
+      "path": "assets/icons/circle-check.svg",
+      "bytes": 357,
+      "sha256": "d48c0901de2262e9f7c0566b5ad3893eafeab509715be6ac4e3b449f15d9260b"
+    },
+    {
+      "path": "assets/icons/clipboard-list.svg",
+      "bytes": 538,
+      "sha256": "f86193e1009afb66198e9dc01f408691387482454cb1232017d5057367f28231"
+    },
+    {
+      "path": "assets/icons/clock.svg",
+      "bytes": 362,
+      "sha256": "4bd6906a9b756dea41ff62ed88b594ce9a231c19f1a06522571457b6e4d774e6"
+    },
+    {
+      "path": "assets/icons/download.svg",
+      "bytes": 428,
+      "sha256": "f68a21e11115edc0aef51ac6f8f4618e14d2b92055f1cb9f5d670efc696bea85"
+    },
+    {
+      "path": "assets/icons/eye.svg",
+      "bytes": 435,
+      "sha256": "7a23c549710b70c9eb1324540260943190190ef309e9f3604726a42c85f9b552"
+    },
+    {
+      "path": "assets/icons/file-check-2.svg",
+      "bytes": 423,
+      "sha256": "0090b86dba913bcca21bd3faa7855be3f2b9fde30377c6eeed609529bca18fe5"
+    },
+    {
+      "path": "assets/icons/image.svg",
+      "bytes": 435,
+      "sha256": "a6c4da2ffe904131fdd47c7f024ef91a48df17162ba166275825b140cf2c2764"
+    },
+    {
+      "path": "assets/icons/key-round.svg",
+      "bytes": 534,
+      "sha256": "a0d77f9b3f399ba0f44a49945b69abe0aad0e37e524fa81f7e3f271bddcc4936"
+    },
+    {
+      "path": "assets/icons/layout-dashboard.svg",
+      "bytes": 504,
+      "sha256": "6b92134b591c618a936c6a03e73fcdb0883a4d8a673455a902f8f8ff8912eccb"
+    },
+    {
+      "path": "assets/icons/log-out.svg",
+      "bytes": 425,
+      "sha256": "3f28d1eedd9a71ec6933578fc1b7cd21c56618e8b9b8339e55bfc133b4eb6bee"
+    },
+    {
+      "path": "assets/icons/map-pin.svg",
+      "bytes": 438,
+      "sha256": "ad781fbeaaa4c67a1a0c2144c6b3472877fc06c2dddf230bffcbe61a6adce984"
+    },
+    {
+      "path": "assets/icons/menu.svg",
+      "bytes": 408,
+      "sha256": "a8da12c1e9b80d9f70001e957ab7e8464d9ad676975702f07d86da8fb47ecdf3"
+    },
+    {
+      "path": "assets/icons/package-search.svg",
+      "bytes": 612,
+      "sha256": "a29fcd23f11679c1f7e79a654f96880cee97cedfc4afa6cc7549b4f7e73519ba"
+    },
+    {
+      "path": "assets/icons/plus.svg",
+      "bytes": 332,
+      "sha256": "b29207ee8f5cc0e829c0bab2e5b223fc88687599c6bd40b94ba35f52327615d6"
+    },
+    {
+      "path": "assets/icons/refresh-cw.svg",
+      "bytes": 474,
+      "sha256": "d63b359b0fe05e03cff8aaa7acf82f9569733e83f7fb4742d583a086972c4bb0"
+    },
+    {
+      "path": "assets/icons/search.svg",
+      "bytes": 351,
+      "sha256": "e11a04d51c122a8a759211424920efc65fa36b7ab06237c34ef90317d920ddf9"
+    },
+    {
+      "path": "assets/icons/shield-check.svg",
+      "bytes": 499,
+      "sha256": "0e9116845c6053cd3bfa09a3e4c232f5fb28c3abab75792287d2aed31c24ebe7"
+    },
+    {
+      "path": "assets/icons/sliders-horizontal.svg",
+      "bytes": 673,
+      "sha256": "995507595c7c24deffef382bacc452a24b40a2efc4aa54908563a0f09b6a75aa"
+    },
+    {
+      "path": "assets/icons/smartphone.svg",
+      "bytes": 376,
+      "sha256": "c65bc8668adc7fecfc12c808858afbfb9ec1b244972b4c6d32d7ae7ec0de1869"
+    },
+    {
+      "path": "assets/icons/upload.svg",
+      "bytes": 423,
+      "sha256": "ebdb92b0456cbae0a2897676607490897734deda0248aa3369d864e94ad28f28"
+    },
+    {
+      "path": "assets/icons/users.svg",
+      "bytes": 458,
+      "sha256": "b3ed379df6aea1aa451ff4bbf8b2884c210849ed30fc220484eced85f5d53c2c"
+    },
+    {
+      "path": "assets/icons/wallet.svg",
+      "bytes": 465,
+      "sha256": "100d8d0773d3f5d3b8c5076e32c16a829daff5211642f6cc48b9d1d6be771142"
+    },
+    {
+      "path": "assets/icons/x.svg",
+      "bytes": 333,
+      "sha256": "0f38855d9d5775c10960ae53e46b745f77914b43f78c43bf8abc39f4d5e06de1"
+    },
+    {
+      "path": "assets/logo/makro-logo.png",
+      "bytes": 6386,
+      "sha256": "4659fcc85661188d395ac1f6304a116d50703169603cd063aba9f360532d4fae"
+    },
+    {
+      "path": "design/demo-data.json",
+      "bytes": 4297,
+      "sha256": "5912570c646e18285bdb55212a38f9a9f143632536163f5cf0ef635ed36af955"
+    },
+    {
+      "path": "design/navigation.json",
+      "bytes": 7329,
+      "sha256": "924232a2897dff1e7b98ca6dff1ea1a6da8b9358dbcda17f0d69d6064377bf54"
+    },
+    {
+      "path": "design/screens.json",
+      "bytes": 16517,
+      "sha256": "f2a49b293aef6cc17317f1a9860d21806757261d8285c31cc2aebec000835a06"
+    },
+    {
+      "path": "design/tokens.json",
+      "bytes": 4849,
+      "sha256": "5bcf00287ec57a14180a7ea4bfd798df2f67a9b9ab7b96439b0fcfa8b7b38ac7"
+    },
+    {
+      "path": "docs/PENDIENTES_Y_CONTRATO.md",
+      "bytes": 3883,
+      "sha256": "b82fc1f248e0c0f4e2027878638dfb691eba18369463eeb0f9fbc7f3be683667"
+    },
+    {
+      "path": "docs/UI_SPEC.md",
+      "bytes": 7141,
+      "sha256": "9af298592c607f329292ee85fa45053182831af7a5e54a4ebf15830c2bff414d"
+    },
+    {
+      "path": "reference/README.md",
+      "bytes": 1722,
+      "sha256": "b65762b36cc14ad1a5a1e36a3261cf8b6cd47575f526cf68fb8fe110fabddbe5"
+    },
+    {
+      "path": "reference/figma-components.js",
+      "bytes": 12225,
+      "sha256": "1b2233183490a4434a8bbb23eabdf73b9e1ee56f019d78da7f57c50fbacfeeac"
+    },
+    {
+      "path": "reference/figma-foundations.js",
+      "bytes": 7148,
+      "sha256": "9e0cdf8d4e816ddc4c42450f29430ecca5ea7f0b7a52499c7914b7db3c652985"
+    },
+    {
+      "path": "reference/figma-views.js",
+      "bytes": 29254,
+      "sha256": "2a048be15d7753ca2f2e9217afb4af97fdd4990f9f9c193dc0d6dfe922415d72"
+    }
+  ]
+}
