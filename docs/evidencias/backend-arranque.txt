@@ -1,0 +1,13 @@
+Fecha local: 18/10/2026, America/Lima.
+Repositorio: technologycenter1/objetos-personales, master ded2115cb0c645f4c64f6ad771759f2e6627db2b.
+Compilación: .\mvnw.cmd -DskipTests package -> BUILD SUCCESS (57.631 s).
+Los tests del Backend NO se ejecutaron: el comando usó -DskipTests.
+Ejecución: java -jar target/system-objetos-perdidos.jar --app.url.logpath=<TEMP>/makro-entrega1-logs --server.address=127.0.0.1 --server.port=9090
+Único ajuste de ejecución: carpeta de logs temporal y escucha local; sin cambios de código.
+Salida de ejecución: código 1. Extracto observado (rutas temporales omitidas):
+2026-10-18 18:53:22.843 [main]  INFO  [] o.s.b.w.s.c.ServletWebServerApplicationContext  --- Root WebApplicationContext: initialization completed in 10487 ms
+2026-10-18 18:53:23.351 [main]  WARN  [] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext  --- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'permisoInterceptor': Unsatisfied dependency expressed through field 'jwtTokenComponent': Error creating bean with name 'jwtTokenComponent' defined in URL [jar:nested:/C:/Users/airto/AppData/Local/Temp/makro-backend-entrega1-20261018/target/system-objetos-perdidos.jar/!BOOT-INF/classes/!/com/makro/objetosperdidos/component/jwttoken/JwtTokenComponent.class]: Failed to instantiate [com.makro.objetosperdidos.component.jwttoken.JwtTokenComponent]: Constructor threw exception
+2026-10-18 18:53:23.393 [main]  INFO  [] o.a.catalina.core.StandardService  --- Stopping service [Tomcat]
+Caused by: java.lang.NumberFormatException: Cannot parse null string
+	at com.makro.objetosperdidos.component.jwttoken.JwtTokenComponent.<init>(JwtTokenComponent.java:22)
+No existe C:\Makro\conf\makroapp.properties en este equipo. No se detectó escucha local en 3306 ni se encontraron archivos SQL en el repositorio inspeccionado.

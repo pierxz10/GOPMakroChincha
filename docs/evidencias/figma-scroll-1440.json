@@ -1,0 +1,121 @@
+{
+  "screens": [
+    {
+      "id": "44:10128",
+      "name": "FP-02 · V2 · RF-04 · Cambio obligatorio de contraseña",
+      "clipsContent": true,
+      "overflowDirection": "VERTICAL",
+      "children": [
+        {
+          "name": "Contenido QA V2 · Cambio obligatorio de contraseña",
+          "y": 0,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "id": "169:3280",
+      "name": "FP-09 · Editar información del objeto",
+      "clipsContent": true,
+      "overflowDirection": "VERTICAL",
+      "children": [
+        {
+          "name": "Contenido QA V2 · Editar información del objeto",
+          "y": 0,
+          "height": 1195
+        }
+      ]
+    },
+    {
+      "id": "45:11768",
+      "name": "FP-11 · V2 · RF-19 a RF-21 · Reclamaciones",
+      "clipsContent": true,
+      "overflowDirection": "VERTICAL",
+      "children": [
+        {
+          "name": "Contenido R3 · Reclamaciones",
+          "y": 0,
+          "height": 2459
+        }
+      ]
+    }
+  ],
+  "states": [
+    {
+      "id": "44:10018",
+      "name": "FP-01 · V2 · Acceso · Acceso con error"
+    },
+    {
+      "id": "44:10062",
+      "name": "Rótulo R3 · loginError"
+    },
+    {
+      "id": "45:10732",
+      "name": "FP-07 · registerError"
+    },
+    {
+      "id": "45:10981",
+      "name": "Rótulo R3 · registerError"
+    },
+    {
+      "id": "46:4390",
+      "name": "FP-14 · deliveryConfirm"
+    },
+    {
+      "id": "46:4593",
+      "name": "Rótulo R3 · deliveryConfirm"
+    },
+    {
+      "id": "49:4857",
+      "name": "R3 mock · stateConfirm"
+    },
+    {
+      "id": "49:5035",
+      "name": "Rótulo R3 · stateConfirm"
+    },
+    {
+      "id": "49:5224",
+      "name": "FP-04 · Confirmar cierre de sesión"
+    },
+    {
+      "id": "167:15575",
+      "name": "FP-02 · Cambio de contraseña · errores"
+    },
+    {
+      "id": "167:15608",
+      "name": "Rótulo V2 · passwordError"
+    },
+    {
+      "id": "169:3788",
+      "name": "Rótulo V2 · editError"
+    },
+    {
+      "id": "169:3791",
+      "name": "FP-09 · Confirmar edición del objeto"
+    },
+    {
+      "id": "169:3960",
+      "name": "Rótulo V2 · editConfirm"
+    },
+    {
+      "id": "170:3796",
+      "name": "Rótulo V2 · recoveryError"
+    },
+    {
+      "id": "170:4378",
+      "name": "Rótulo V2 · photoError"
+    },
+    {
+      "id": "170:4740",
+      "name": "Rótulo V2 · claimCancelError"
+    },
+    {
+      "id": "170:4743",
+      "name": "FP-12 · Confirmar anulación"
+    },
+    {
+      "id": "170:4912",
+      "name": "Rótulo V2 · claimCancelConfirm"
+    }
+  ]
+}

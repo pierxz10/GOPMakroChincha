@@ -1,0 +1,1203 @@
+{
+  "page": "05 · Mockups · Escritorio",
+  "screens": [
+    {
+      "id": "44:9979",
+      "name": "FP-01 · V2 · Acceso · Inicio de sesión",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        "Chincha",
+        "Inicio de sesión",
+        "Usuario *",
+        "cuenta.demo",
+        "Contraseña *",
+        "••••••••",
+        "Ingresar",
+        "Recuperar acceso"
+      ],
+      "links": [
+        {
+          "name": "Botón · Ingresar",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "NODE",
+              "target": "44:10454"
+            }
+          ]
+        },
+        {
+          "name": "Botón · Recuperar acceso",
+          "actions": [
+            {
+              "type": "NODE",
+              "target": "44:10065"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "44:10128",
+      "name": "FP-02 · V2 · RF-04 · Cambio obligatorio de contraseña",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        "Chincha",
+        "Cambio obligatorio de contraseña",
+        "Debes cambiar la contraseña temporal para continuar. Todos los\ncampos son obligatorios.",
+        "Contraseña actual *",
+        "••••••••",
+        "Nueva contraseña *",
+        "••••••••",
+        "Debe ser distinta de la actual y cumplir la política vigente.",
+        "Confirmar nueva contraseña *",
+        "••••••••",
+        "Actualizar contraseña"
+      ],
+      "links": [
+        {
+          "name": "Botón · Actualizar contraseña",
+          "actions": [
+            {
+              "type": "NODE",
+              "target": "167:15611"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "44:10065",
+      "name": "FP-03 · V2 · RF-03 · Recuperar contraseña",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        "Chincha",
+        "Recuperar contraseña",
+        "Ingresa el correo electrónico asociado a tu cuenta.",
+        "Correo electrónico *",
+        "cuenta.demo@example.com",
+        "Usa el correo con el que se registró tu cuenta.",
+        "Solicitar recuperación",
+        "Volver al acceso"
+      ],
+      "links": [
+        {
+          "name": "Botón · Solicitar recuperación",
+          "actions": [
+            {
+              "type": "NODE",
+              "target": "44:10100"
+            }
+          ]
+        },
+        {
+          "name": "Botón · Volver al acceso",
+          "actions": [
+            {
+              "type": "NODE",
+              "target": "44:9979"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "49:5224",
+      "name": "FP-04 · Confirmar cierre de sesión",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        "¿Cerrar sesión?",
+        "Tu sesión finalizará. Para volver a entrar necesitarás iniciar sesión\nnuevamente.",
+        "Cerrar sesión",
+        "Cancelar"
+      ],
+      "links": [
+        {
+          "name": "Botón · Cerrar sesión",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "NODE",
+              "target": "44:9979"
+            }
+          ]
+        },
+        {
+          "name": "Botón · Cancelar",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "169:3280",
+      "name": "FP-09 · Editar información del objeto",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        "Makro Chincha",
+        "Auxiliar",
+        "Inicio",
+        "Objetos",
+        "Reclamaciones",
+        "Cerrar sesión",
+        "Gestión de objetos perdidos",
+        "Auxiliar",
+        "Editar información del objeto",
+        "Actualiza la información del hallazgo; el código y la trazabilidad se conservan.",
+        "Código único",
+        "OBJ-2026-000001",
+        "Usuario registrador",
+        "Asistente demo",
+        "Fecha del registro",
+        "16 oct 2026 · 10:40",
+        "Categoría *",
+        "Accesorios",
+        "Nombre del objeto",
+        "Mochila negra",
+        "Máximo 100 caracteres.",
+        "Fecha del hallazgo *",
+        "2026-10-16",
+        "Hora del hallazgo *",
+        "10:35",
+        "Lugar del hallazgo *",
+        "Zona de cajas",
+        "Descripción",
+        "Tela negra, dos cierres; detalle del bolsillo frontal actualizado.",
+        "Máximo 500 caracteres."
+      ],
+      "links": [
+        {
+          "name": "Navegación · Inicio",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Navegación · Objetos",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Navegación · Reclamaciones",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Navegación · Reportes",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Navegación · Estados",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Navegación · Usuarios",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "45:11768",
+      "name": "FP-11 · V2 · RF-19 a RF-21 · Reclamaciones",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        "Makro Chincha",
+        "Auxiliar",
+        "Inicio",
+        "Objetos",
+        "Reclamaciones",
+        "Cerrar sesión",
+        "Gestión de objetos perdidos",
+        "Auxiliar",
+        "Consulta de reclamaciones",
+        "Busca por documento o código de objeto y combina el estado.",
+        "Documento del reclamante",
+        "00000000",
+        "Máximo 20 caracteres. DNI, CE o pasaporte.",
+        "Código del objeto",
+        "OBJ-2026-000001",
+        "Estado",
+        "Todos",
+        "Buscar",
+        "Filtrar estado",
+        "Limpiar filtros",
+        "Datos personales protegidos",
+        "La visualización de nombre, documento y teléfono depende de los permisos vigentes.",
+        "Registros de demostración",
+        "ACTIVA",
+        "Mochila negra",
+        "Objeto",
+        "OBJ-2026-000001",
+        "Reclamante",
+        "Reclamante protegido",
+        "17 oct 2026 · 12:15"
+      ],
+      "links": [
+        {
+          "name": "Nav · Inicio",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Nav · Objetos",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Nav · Reclamaciones",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Nav · Reportes",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Nav · Estados",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Nav · Usuarios",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "46:2727",
+      "name": "FP-13 · V2 · RF-22 y RF-23 · Verificar identidad",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        "Makro Chincha",
+        "Auxiliar",
+        "Inicio",
+        "Objetos",
+        "Reclamaciones",
+        "Cerrar sesión",
+        "Gestión de objetos perdidos",
+        "Auxiliar",
+        "Verificación de identidad",
+        "Registra y contrasta el documento presentado con la reclamación.",
+        "RECLAMADO",
+        "Mochila negra",
+        "Código automático",
+        "OBJ-2026-000001",
+        "Hallazgo",
+        "16 oct 2026 · 10:35 · Zona de cajas",
+        "Responsable del registro",
+        "Asistente demo",
+        "Documento declarado",
+        "DNI · 00000000",
+        "Tipo de documento presentado",
+        "DNI",
+        "DNI, CE o PASAPORTE.",
+        "Número de documento presentado",
+        "00000000",
+        "Máximo 20 caracteres.",
+        "Resultado de verificación",
+        "APROBADA: reclamación APROBADA y objeto VERIFICADO. RECHAZADA: motivo obligatorio y entrega bloqueada.",
+        "Registrar APROBADA",
+        "Registrar RECHAZADA"
+      ],
+      "links": [
+        {
+          "name": "Nav · Inicio",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Nav · Objetos",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Nav · Reclamaciones",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Nav · Reportes",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Nav · Estados",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Nav · Usuarios",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "49:4250",
+      "name": "FP-20 · audit",
+      "width": 1440,
+      "height": 1000,
+      "texts": [
+        "Makro Chincha",
+        "Administrador",
+        "Inicio",
+        "Reportes",
+        "Estados",
+        "Usuarios",
+        "Roles",
+        "Permisos",
+        "Categorías",
+        "Lugares",
+        "Bitácora",
+        "Cerrar sesión",
+        "Gestión de objetos perdidos",
+        "Administrador",
+        "Bitácora del sistema",
+        "Consulta de eventos para Administrador. Los registros son de solo lectura.",
+        "Usuario",
+        "Todos",
+        "Fecha",
+        "2026-10-17",
+        "Registrar objeto",
+        "Usuario y momento",
+        "Asistente demo · 17 oct 2026",
+        "Ver movimiento",
+        "Verificar identidad",
+        "Usuario y momento",
+        "Auxiliar demo · 17 oct 2026",
+        "Ver movimiento",
+        "Actualizar estado",
+        "Usuario y momento"
+      ],
+      "links": [
+        {
+          "name": "Nav · Inicio",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Nav · Objetos",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "NODE",
+              "target": "44:10933"
+            }
+          ]
+        },
+        {
+          "name": "Nav · Reclamaciones",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Nav · Notificaciones",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "NODE",
+              "target": "49:5224"
+            }
+          ]
+        },
+        {
+          "name": "Nav · Reportes",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Nav · Estados",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

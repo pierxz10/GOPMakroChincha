@@ -1,0 +1,20 @@
+/* Derivados del contexto de Figma V2, FP-01: 44:9979 / 51:13158 / 37:924. */
+:root {
+  --blue: #0036b3;
+  --yellow: #fff200;
+  --page: #f5f7fb;
+  --surface: #fff;
+  --ink: #172b4d;
+  --line: #dce3ed;
+  --error: #b42318;
+  --radius-control: 8px;
+  --radius-card: 16px;
+  --space-xs: 6px;
+  --space-sm: 8px;
+  --space-md: 20px;
+  --space-card: 24px;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: var(--ink);
+  background: var(--page);
+  font-synthesis: none;
+}

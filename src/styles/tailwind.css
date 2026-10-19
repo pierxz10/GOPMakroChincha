@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: 'Roboto', Arial, sans-serif;
+  --color-brand: var(--blue);
+  --color-action: var(--yellow);
+  --color-canvas: var(--page);
+  --color-ink: var(--ink);
+  --color-line: var(--line);
+  --color-danger: var(--error);
+}
+
+@layer base {
+  body { @apply m-0 min-h-screen min-w-[280px] bg-canvas font-sans text-ink; }
+  [hidden] { display: none !important; }
+  h1 { @apply text-2xl font-bold leading-[35px]; }
+  h2 { @apply text-[22px] font-bold leading-[30px]; }
+  p { @apply text-base leading-[23px]; }
+  h1, h2, p { overflow-wrap: anywhere; }
+  :focus-visible { @apply outline-3 outline-offset-3 outline-brand; }
+  dialog { @apply w-[min(480px,calc(100%-40px))] rounded-2xl border border-line bg-white p-6 text-ink; margin: auto; }
+  dialog::backdrop { background: rgb(23 43 77 / .45); }
+}
+
+@layer components {
+  .access-card { @apply mx-auto flex max-w-[480px] flex-col gap-5 rounded-2xl border border-line bg-white p-6; }
+  .form-input { @apply min-h-[46px] w-full min-w-0 rounded-lg border border-line bg-white px-3.5 py-[11px] text-base leading-[23px] text-ink; }
+  .form-input[aria-invalid=true] { @apply border-danger; }
+  .button { @apply flex min-h-[46px] w-full cursor-pointer items-center justify-center gap-2 rounded-lg border border-transparent px-4 py-3 text-sm font-medium leading-5 text-brand no-underline; }
+  .primary { @apply bg-action; }
+  .secondary { @apply border-line bg-white; }
+  .button:disabled { @apply cursor-wait opacity-65; }
+  .button:hover:not(:disabled) { filter: brightness(.97); }
+  .notice { @apply rounded-lg bg-canvas p-3 text-sm leading-[22px]; }
+  .notice.error { @apply border border-current text-danger; }
+}

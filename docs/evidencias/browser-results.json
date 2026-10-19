@@ -1,0 +1,266 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\airto\\OneDrive\\Documents\\repositorios\\Nueva carpeta\\GOPMakroChincha\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "C:\\Users\\airto\\OneDrive\\Documents\\repositorios\\Nueva carpeta\\GOPMakroChincha\\playwright.config.ts",
+    "rootDir": "C:/Users/airto/OneDrive/Documents/repositorios/Nueva carpeta/GOPMakroChincha/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/airto/OneDrive/Documents/repositorios/Nueva carpeta/GOPMakroChincha/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/airto/OneDrive/Documents/repositorios/Nueva carpeta/GOPMakroChincha/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\airto\\OneDrive\\Documents\\repositorios\\Nueva carpeta\\GOPMakroChincha\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "C:\\Users\\airto\\OneDrive\\Documents\\repositorios\\Nueva carpeta\\GOPMakroChincha\\tests\\browser",
+        "snapshotDir": "C:\\Users\\airto\\OneDrive\\Documents\\repositorios\\Nueva carpeta\\GOPMakroChincha\\tests\\browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5173",
+          "channel": "msedge",
+          "trace": "off",
+          "screenshot": "off"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/evidencias/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "login.spec.ts",
+      "file": "login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "FP-01 responsive 360: assets, geometría, obligatorios y navegación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 885,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-19T00:12:26.275Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "geometría",
+                      "contentType": "application/json",
+                      "body": "eyJ2aWV3cG9ydCI6MzYwLCJzY3JvbGwiOjM2MCwiaW1hZ2VzIjpbeyJzcmMiOiIvYXNzZXRzL21ha3JvLWxvZ28ucG5nIiwibG9hZGVkIjp0cnVlLCJ3aWR0aCI6MTA4LCJoZWlnaHQiOjI2fSx7InNyYyI6Ii9hc3NldHMvYXJyb3ctcmlnaHQuc3ZnIiwibG9hZGVkIjp0cnVlLCJ3aWR0aCI6MTgsImhlaWdodCI6MTh9LHsic3JjIjoiL2Fzc2V0cy9rZXktcm91bmQuc3ZnIiwibG9hZGVkIjp0cnVlLCJ3aWR0aCI6MTgsImhlaWdodCI6MTh9XSwiY2FyZCI6eyJ4IjoyMCwieSI6OTgsIndpZHRoIjozMjAsImhlaWdodCI6NDA3LCJ0b3AiOjk4LCJyaWdodCI6MzQwLCJib3R0b20iOjUwNSwibGVmdCI6MjB9fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-915afba419f292dcfa59",
+          "file": "login.spec.ts",
+          "line": 4,
+          "column": 3
+        },
+        {
+          "title": "FP-01 responsive 768: assets, geometría, obligatorios y navegación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 915,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-19T00:12:27.708Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "geometría",
+                      "contentType": "application/json",
+                      "body": "eyJ2aWV3cG9ydCI6NzY4LCJzY3JvbGwiOjc2OCwiaW1hZ2VzIjpbeyJzcmMiOiIvYXNzZXRzL21ha3JvLWxvZ28ucG5nIiwibG9hZGVkIjp0cnVlLCJ3aWR0aCI6MTA4LCJoZWlnaHQiOjI2fSx7InNyYyI6Ii9hc3NldHMvYXJyb3ctcmlnaHQuc3ZnIiwibG9hZGVkIjp0cnVlLCJ3aWR0aCI6MTgsImhlaWdodCI6MTh9LHsic3JjIjoiL2Fzc2V0cy9rZXktcm91bmQuc3ZnIiwibG9hZGVkIjp0cnVlLCJ3aWR0aCI6MTgsImhlaWdodCI6MTh9XSwiY2FyZCI6eyJ4IjoxNDQsInkiOjk4LCJ3aWR0aCI6NDgwLCJoZWlnaHQiOjQwNywidG9wIjo5OCwicmlnaHQiOjYyNCwiYm90dG9tIjo1MDUsImxlZnQiOjE0NH19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-75e2ca199f3fa08e90a6",
+          "file": "login.spec.ts",
+          "line": 4,
+          "column": 3
+        },
+        {
+          "title": "FP-01 responsive 1440: assets, geometría, obligatorios y navegación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 642,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-19T00:12:28.646Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "geometría",
+                      "contentType": "application/json",
+                      "body": "eyJ2aWV3cG9ydCI6MTQ0MCwic2Nyb2xsIjoxNDQwLCJpbWFnZXMiOlt7InNyYyI6Ii9hc3NldHMvbWFrcm8tbG9nby5wbmciLCJsb2FkZWQiOnRydWUsIndpZHRoIjoxMDgsImhlaWdodCI6MjZ9LHsic3JjIjoiL2Fzc2V0cy9hcnJvdy1yaWdodC5zdmciLCJsb2FkZWQiOnRydWUsIndpZHRoIjoxOCwiaGVpZ2h0IjoxOH0seyJzcmMiOiIvYXNzZXRzL2tleS1yb3VuZC5zdmciLCJsb2FkZWQiOnRydWUsIndpZHRoIjoxOCwiaGVpZ2h0IjoxOH1dLCJjYXJkIjp7IngiOjQ4MCwieSI6OTgsIndpZHRoIjo0ODAsImhlaWdodCI6NDA3LCJ0b3AiOjk4LCJyaWdodCI6OTYwLCJib3R0b20iOjUwNSwibGVmdCI6NDgwfX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-33c3e279e4439563cbe1",
+          "file": "login.spec.ts",
+          "line": 4,
+          "column": 3
+        },
+        {
+          "title": "intento real desde navegador: error de conexión; sin interceptar ni simular API",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1062,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-19T00:12:29.308Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-a0cdda3701bbfc75d46a",
+          "file": "login.spec.ts",
+          "line": 36,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-19T00:12:25.667Z",
+    "duration": 5198.451,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

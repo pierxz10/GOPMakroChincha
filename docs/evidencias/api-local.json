@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-10-19T00:11:55.833Z",
+  "apiOrigin": "http://localhost:9090",
+  "frontendOrigin": "http://127.0.0.1:5173",
+  "scope": "Solicitudes HTTP reales desde Node; no sustituyen una prueba CORS desde navegador.",
+  "results": [
+    {
+      "name": "OpenAPI real",
+      "status": null,
+      "result": "bloqueado",
+      "reason": "ECONNREFUSED"
+    },
+    {
+      "name": "Preflight login",
+      "status": null,
+      "result": "bloqueado",
+      "reason": "ECONNREFUSED"
+    },
+    {
+      "name": "Validación de obligatorios",
+      "status": null,
+      "result": "bloqueado",
+      "reason": "ECONNREFUSED"
+    }
+  ]
+}

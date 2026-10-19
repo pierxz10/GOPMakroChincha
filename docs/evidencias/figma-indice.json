@@ -1,0 +1,542 @@
+[
+  {
+    "id": "182:131",
+    "name": "Evidencia · FP-01",
+    "texts": [
+      "FP-01",
+      "Inicio de sesión (con mensaje genérico de error)",
+      "Sin calificación",
+      "Se corrigió · Campos obligatorios y validación cercana; error genérico compartido para credenciales inválidas.",
+      "Escritorio",
+      "Tablet",
+      "Celular"
+    ],
+    "links": [
+      {
+        "label": "Abrir · Escritorio",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=44-9979&page-id=4-6&starting-point-node-id=44-9979&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Tablet",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=51-13158&page-id=4-7&starting-point-node-id=51-13158&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Celular",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=37-924&page-id=4-8&starting-point-node-id=37-924&scaling=scale-down&content-scaling=fixed"
+      }
+    ]
+  },
+  {
+    "id": "182:146",
+    "name": "Evidencia · FP-02",
+    "texts": [
+      "FP-02",
+      "Cambio de contraseña (actual, nueva, confirmación)",
+      "X original",
+      "Se corrigió · Contraseña actual, nueva y confirmación; obligatorios, errores, carga, éxito y bloqueo de navegación RF-04.",
+      "Escritorio",
+      "Tablet",
+      "Celular"
+    ],
+    "links": [
+      {
+        "label": "Abrir · Escritorio",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=44-10128&page-id=4-6&starting-point-node-id=44-10128&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Tablet",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=51-13307&page-id=4-7&starting-point-node-id=51-13307&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Celular",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=37-1076&page-id=4-8&starting-point-node-id=37-1076&scaling=scale-down&content-scaling=fixed"
+      }
+    ]
+  },
+  {
+    "id": "182:161",
+    "name": "Evidencia · FP-03",
+    "texts": [
+      "FP-03",
+      "Recuperación de acceso (solo correo)",
+      "Sin calificación",
+      "Se corrigió · Identificador sustituido por correo; formato inválido y respuesta genérica sin revelar la existencia de la cuenta.",
+      "Escritorio",
+      "Tablet",
+      "Celular"
+    ],
+    "links": [
+      {
+        "label": "Abrir · Escritorio",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=44-10065&page-id=4-6&starting-point-node-id=44-10065&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Tablet",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=51-13244&page-id=4-7&starting-point-node-id=51-13244&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Celular",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=37-1013&page-id=4-8&starting-point-node-id=37-1013&scaling=scale-down&content-scaling=fixed"
+      }
+    ]
+  },
+  {
+    "id": "182:176",
+    "name": "Evidencia · FP-04",
+    "texts": [
+      "FP-04",
+      "Confirmación de cierre de sesión",
+      "Sin calificación",
+      "Se creó · Modal con Cancelar y Cerrar sesión; conserva la sesión al cancelar y bloquea contenido después de salir.",
+      "Escritorio",
+      "Tablet",
+      "Celular"
+    ],
+    "links": [
+      {
+        "label": "Abrir · Escritorio",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=49-5224&page-id=4-6&starting-point-node-id=49-5224&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Tablet",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=59-16699&page-id=4-7&starting-point-node-id=59-16699&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Celular",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=43-2318&page-id=4-8&starting-point-node-id=43-2318&scaling=scale-down&content-scaling=fixed"
+      }
+    ]
+  },
+  {
+    "id": "182:191",
+    "name": "Evidencia · FP-05",
+    "texts": [
+      "FP-05",
+      "Dashboard con los 5 indicadores",
+      "Correcta original",
+      "Se conservó · Dashboard y cinco indicadores originales. Navegación sin notificaciones y legibilidad ajustada.",
+      "Escritorio",
+      "Tablet",
+      "Celular"
+    ],
+    "links": [
+      {
+        "label": "Abrir · Escritorio",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=44-10594&page-id=4-6&starting-point-node-id=44-10594&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Tablet",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=51-13776&page-id=4-7&starting-point-node-id=51-13776&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Celular",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=37-1298&page-id=4-8&starting-point-node-id=37-1298&scaling=scale-down&content-scaling=fixed"
+      }
+    ]
+  },
+  {
+    "id": "182:206",
+    "name": "Evidencia · FP-06",
+    "texts": [
+      "FP-06",
+      "Lista de objetos con búsqueda y filtros",
+      "Correcta original",
+      "Se conservó · Listado, búsqueda y filtros originales; enlaces conservados.",
+      "Escritorio",
+      "Tablet",
+      "Celular"
+    ],
+    "links": [
+      {
+        "label": "Abrir · Escritorio",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=44-10933&page-id=4-6&starting-point-node-id=44-10933&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Tablet",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=52-2453&page-id=4-7&starting-point-node-id=52-2453&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Celular",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=38-1272&page-id=4-8&starting-point-node-id=38-1272&scaling=scale-down&content-scaling=fixed"
+      }
+    ]
+  },
+  {
+    "id": "182:221",
+    "name": "Evidencia · FP-07",
+    "texts": [
+      "FP-07",
+      "Registro de objeto con cámara o carga de foto",
+      "Correcta original",
+      "Se completó · Registro aprobado conservado. Se añadieron captura/carga representadas, vista previa ilustrativa, reemplazo y error de formato.",
+      "Escritorio",
+      "Tablet",
+      "Celular"
+    ],
+    "links": [
+      {
+        "label": "Abrir · Escritorio",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=45-10484&page-id=4-6&starting-point-node-id=45-10484&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Tablet",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=52-2928&page-id=4-7&starting-point-node-id=52-2928&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Celular",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=38-1459&page-id=4-8&starting-point-node-id=38-1459&scaling=scale-down&content-scaling=fixed"
+      }
+    ]
+  },
+  {
+    "id": "182:236",
+    "name": "Evidencia · FP-08",
+    "texts": [
+      "FP-08",
+      "Detalle del objeto con historial",
+      "Correcta original",
+      "Se conservó · Detalle e historial originales. Se añadió acceso a edición y se aclaró el alcance del estado final.",
+      "Escritorio",
+      "Tablet",
+      "Celular"
+    ],
+    "links": [
+      {
+        "label": "Abrir · Escritorio",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=45-11178&page-id=4-6&starting-point-node-id=45-11178&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Tablet",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=52-3629&page-id=4-7&starting-point-node-id=52-3629&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Celular",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=38-1749&page-id=4-8&starting-point-node-id=38-1749&scaling=scale-down&content-scaling=fixed"
+      }
+    ]
+  },
+  {
+    "id": "182:251",
+    "name": "Evidencia · FP-09",
+    "texts": [
+      "FP-09",
+      "Edición del objeto",
+      "X original",
+      "Se creó · Formulario, errores, confirmación y éxito. Código, usuario y fecha de registro de solo lectura. Edición de ENTREGADO pendiente de María.",
+      "Escritorio",
+      "Tablet",
+      "Celular"
+    ],
+    "links": [
+      {
+        "label": "Abrir · Escritorio",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=169-3280&page-id=4-6&starting-point-node-id=169-3280&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Tablet",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=169-7902&page-id=4-7&starting-point-node-id=169-7902&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Celular",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=169-10885&page-id=4-8&starting-point-node-id=169-10885&scaling=scale-down&content-scaling=fixed"
+      }
+    ]
+  },
+  {
+    "id": "182:266",
+    "name": "Evidencia · FP-10",
+    "texts": [
+      "FP-10",
+      "Registro de reclamación",
+      "Correcta original",
+      "Se conservó · Formulario de registro original y límites conservados; la simulación actualiza el estado ACTIVA de la reclamación.",
+      "Escritorio",
+      "Tablet",
+      "Celular"
+    ],
+    "links": [
+      {
+        "label": "Abrir · Escritorio",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=45-11958&page-id=4-6&starting-point-node-id=45-11958&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Tablet",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=53-3207&page-id=4-7&starting-point-node-id=53-3207&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Celular",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=38-1985&page-id=4-8&starting-point-node-id=38-1985&scaling=scale-down&content-scaling=fixed"
+      }
+    ]
+  },
+  {
+    "id": "182:281",
+    "name": "Evidencia · FP-11",
+    "texts": [
+      "FP-11",
+      "Consulta de reclamaciones con búsqueda",
+      "X original",
+      "Se corrigió · Búsqueda por documento/código, filtro, detalle, cinco estados y casos de datos personales con/sin permiso simulado.",
+      "Escritorio",
+      "Tablet",
+      "Celular"
+    ],
+    "links": [
+      {
+        "label": "Abrir · Escritorio",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=45-11768&page-id=4-6&starting-point-node-id=45-11768&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Tablet",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=53-3016&page-id=4-7&starting-point-node-id=53-3016&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Celular",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=38-1931&page-id=4-8&starting-point-node-id=38-1931&scaling=scale-down&content-scaling=fixed"
+      }
+    ]
+  },
+  {
+    "id": "182:296",
+    "name": "Evidencia · FP-12",
+    "texts": [
+      "FP-12",
+      "Anulación de reclamación (motivo obligatorio)",
+      "Correcta original",
+      "Se creó · Anulación distinta del rechazo: motivo obligatorio de hasta 300 caracteres, confirmación y estado ANULADA.",
+      "Escritorio",
+      "Tablet",
+      "Celular"
+    ],
+    "links": [
+      {
+        "label": "Abrir · Escritorio",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=170-4381&page-id=4-6&starting-point-node-id=170-4381&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Tablet",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=170-9327&page-id=4-7&starting-point-node-id=170-9327&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Celular",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=170-12239&page-id=4-8&starting-point-node-id=170-12239&scaling=scale-down&content-scaling=fixed"
+      }
+    ]
+  },
+  {
+    "id": "182:311",
+    "name": "Evidencia · FP-13",
+    "texts": [
+      "FP-13",
+      "Verificación de identidad y resultado",
+      "Sin calificación",
+      "Se corrigió · Tipo y número del documento presentado, aprobación, rechazo con motivo máximo 300 y bloqueo de entrega.",
+      "Escritorio",
+      "Tablet",
+      "Celular"
+    ],
+    "links": [
+      {
+        "label": "Abrir · Escritorio",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=46-2727&page-id=4-6&starting-point-node-id=46-2727&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Tablet",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=53-3657&page-id=4-7&starting-point-node-id=53-3657&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Celular",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=38-2152&page-id=4-8&starting-point-node-id=38-2152&scaling=scale-down&content-scaling=fixed"
+      }
+    ]
+  },
+  {
+    "id": "182:326",
+    "name": "Evidencia · FP-14",
+    "texts": [
+      "FP-14",
+      "Registro de entrega",
+      "Correcta original",
+      "Se conservó · Entrega y confirmación conservadas. Verificación y autorización exigidas; Supervisor/Administrador no entregan.",
+      "Escritorio",
+      "Tablet",
+      "Celular"
+    ],
+    "links": [
+      {
+        "label": "Abrir · Escritorio",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=46-3969&page-id=4-6&starting-point-node-id=46-3969&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Tablet",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=53-4905&page-id=4-7&starting-point-node-id=53-4905&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Celular",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=38-2542&page-id=4-8&starting-point-node-id=38-2542&scaling=scale-down&content-scaling=fixed"
+      }
+    ]
+  },
+  {
+    "id": "182:341",
+    "name": "Evidencia · FP-15",
+    "texts": [
+      "FP-15",
+      "Constancia de entrega (imprimible)",
+      "Correcta original",
+      "Se conservó · Constancia y vista de impresión posteriores a entrega; se bloquea una segunda entrega.",
+      "Escritorio",
+      "Tablet",
+      "Celular"
+    ],
+    "links": [
+      {
+        "label": "Abrir · Escritorio",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=46-4596&page-id=4-6&starting-point-node-id=46-4596&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Tablet",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=54-3436&page-id=4-7&starting-point-node-id=54-3436&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Celular",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=39-1723&page-id=4-8&starting-point-node-id=39-1723&scaling=scale-down&content-scaling=fixed"
+      }
+    ]
+  },
+  {
+    "id": "182:356",
+    "name": "Evidencia · FP-16",
+    "texts": [
+      "FP-16",
+      "Reportes: objetos, entregados y pendientes",
+      "Correcta original",
+      "Se conservó · Reportes y filtros originales conservados.",
+      "Escritorio",
+      "Tablet",
+      "Celular"
+    ],
+    "links": [
+      {
+        "label": "Abrir · Escritorio",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=46-5016&page-id=4-6&starting-point-node-id=46-5016&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Tablet",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=54-3858&page-id=4-7&starting-point-node-id=54-3858&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Celular",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=39-1862&page-id=4-8&starting-point-node-id=39-1862&scaling=scale-down&content-scaling=fixed"
+      }
+    ]
+  },
+  {
+    "id": "182:371",
+    "name": "Evidencia · FP-17",
+    "texts": [
+      "FP-17",
+      "Gestión de usuarios",
+      "Correcta original",
+      "Se conservó · Gestión de usuarios original conservada.",
+      "Escritorio",
+      "Tablet",
+      "Celular"
+    ],
+    "links": [
+      {
+        "label": "Abrir · Escritorio",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=48-3513&page-id=4-6&starting-point-node-id=48-3513&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Tablet",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=54-4297&page-id=4-7&starting-point-node-id=54-4297&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Celular",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=39-2031&page-id=4-8&starting-point-node-id=39-2031&scaling=scale-down&content-scaling=fixed"
+      }
+    ]
+  },
+  {
+    "id": "182:386",
+    "name": "Evidencia · FP-18",
+    "texts": [
+      "FP-18",
+      "Gestión de categorías y de lugares",
+      "Correcta original",
+      "Se conservó · Se conservaron las vistas de categorías y lugares.",
+      "Escritorio",
+      "Tablet",
+      "Celular"
+    ],
+    "links": [
+      {
+        "label": "Abrir · Escritorio",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=48-4894&page-id=4-6&starting-point-node-id=48-4894&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Tablet",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=55-4456&page-id=4-7&starting-point-node-id=55-4456&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Celular",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=39-2454&page-id=4-8&starting-point-node-id=39-2454&scaling=scale-down&content-scaling=fixed"
+      }
+    ]
+  },
+  {
+    "id": "182:401",
+    "name": "Evidencia · FP-19",
+    "texts": [
+      "FP-19",
+      "Roles y permisos",
+      "Correcta original",
+      "Se actualizó · Roles y permisos conservados; decisiones no confirmadas siguen pendientes y notificaciones quedan fuera del alcance.",
+      "Escritorio",
+      "Tablet",
+      "Celular"
+    ],
+    "links": [
+      {
+        "label": "Abrir · Escritorio",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=48-3933&page-id=4-6&starting-point-node-id=48-3933&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Tablet",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=54-4720&page-id=4-7&starting-point-node-id=54-4720&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Celular",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=39-2180&page-id=4-8&starting-point-node-id=39-2180&scaling=scale-down&content-scaling=fixed"
+      }
+    ]
+  },
+  {
+    "id": "182:416",
+    "name": "Evidencia · FP-20",
+    "texts": [
+      "FP-20",
+      "Bitácora del sistema",
+      "Sin calificación",
+      "Ya existía y estaba completa · Se identificó como Bitácora del sistema; consulta y detalle para Administrador, sin editar ni eliminar registros.",
+      "Escritorio",
+      "Tablet",
+      "Celular"
+    ],
+    "links": [
+      {
+        "label": "Abrir · Escritorio",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=49-4250&page-id=4-6&starting-point-node-id=49-4250&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Tablet",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=55-5276&page-id=4-7&starting-point-node-id=55-5276&scaling=scale-down&content-scaling=fixed"
+      },
+      {
+        "label": "Abrir · Celular",
+        "url": "https://www.figma.com/proto/WkZ5czgTYiW7neXRYMM67l/Makro-Chincha?node-id=41-2075&page-id=4-8&starting-point-node-id=41-2075&scaling=scale-down&content-scaling=fixed"
+      }
+    ]
+  }
+]

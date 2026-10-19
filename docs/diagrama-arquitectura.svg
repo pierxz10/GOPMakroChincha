@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780" role="img" aria-labelledby="title desc">
+  <title id="title">Arquitectura de la primera entrega — Makro Chincha</title>
+  <desc id="desc">Frontend React comunica con API REST Spring Boot y MySQL. La interfaz está implementada; el código Backend existe, pero falta su configuración de ejecución. Fotografías y módulos operativos son trabajo posterior.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#526581"/></marker></defs>
+  <rect width="1200" height="780" fill="#f5f7fb"/>
+  <rect width="1200" height="100" fill="#0036b3"/>
+  <g font-family="Arial, sans-serif" fill="#172b4d">
+    <text x="36" y="43" font-size="26" font-weight="700" fill="white">Makro Chincha · Arquitectura de la primera entrega</text>
+    <text x="36" y="75" font-size="16" fill="white">Airton · Developer 1 — Frontend · Scrum Adaptativo · 19 octubre 2026</text>
+    <rect x="36" y="128" width="1128" height="52" rx="10" fill="#fff4d6" stroke="#e3bd48"/>
+    <text x="54" y="159" font-size="16">Estado: Frontend implementado; conexión exitosa bloqueada por configuración, BD y cuenta de pruebas faltantes.</text>
+    <rect x="36" y="216" width="170" height="190" rx="12" fill="white" stroke="#dce3ed"/>
+    <text x="56" y="249" font-size="18" font-weight="700">Navegador</text>
+    <text x="56" y="285" font-size="16">Web responsive</text>
+    <text x="56" y="315" font-size="16">360 / 768 / 1440</text>
+    <text x="56" y="361" font-size="14">Render y fallo de red</text>
+    <text x="56" y="382" font-size="14">verificados</text>
+    <rect x="256" y="216" width="270" height="270" rx="12" fill="#edf3ff" stroke="#0036b3" stroke-width="2"/>
+    <text x="276" y="249" font-size="18" font-weight="700">I · Frontend</text>
+    <text x="276" y="282" font-size="16">React + TypeScript</text>
+    <text x="276" y="309" font-size="16">Vite + Tailwind CSS</text>
+    <text x="276" y="350" font-size="15">Acceso y confirmación mínima</text>
+    <text x="276" y="377" font-size="15">Componentes y tokens Figma</text>
+    <text x="276" y="404" font-size="15">Sesión en memoria + refresh</text>
+    <text x="276" y="431" font-size="15">HTTP tipado / errores / timeout</text>
+    <text x="276" y="464" font-size="14">VITE_API_BASE_URL · pública</text>
+    <rect x="606" y="216" width="270" height="270" rx="12" fill="#eef9f2" stroke="#287448" stroke-width="2"/>
+    <text x="626" y="249" font-size="18" font-weight="700">E · Backend en código</text>
+    <text x="626" y="282" font-size="16">Java / Spring Boot :9090</text>
+    <text x="626" y="309" font-size="16">API REST · Auth / Token</text>
+    <text x="626" y="350" font-size="15">JWT HS512 + BCrypt</text>
+    <text x="626" y="377" font-size="15">Refresh token persistido</text>
+    <text x="626" y="404" font-size="15">Permisos efectivos en servidor</text>
+    <text x="626" y="431" font-size="15">Spring Data JDBC</text>
+    <text x="626" y="464" font-size="14">Arranque local bloqueado</text>
+    <rect x="946" y="216" width="218" height="190" rx="12" fill="#eef9f2" stroke="#287448"/>
+    <text x="966" y="249" font-size="18" font-weight="700">E · MySQL requerido</text>
+    <text x="966" y="285" font-size="15">Usuarios / roles / permisos</text>
+    <text x="966" y="312" font-size="15">Refresh tokens / auditoría</text>
+    <text x="966" y="358" font-size="14">Esquema y datos reales</text>
+    <text x="966" y="381" font-size="14">no disponibles</text>
+    <g stroke="#526581" stroke-width="2" fill="none" marker-end="url(#arrow)">
+      <path d="M206 320H252"/><path d="M526 320H602"/><path d="M876 320H942"/>
+    </g>
+    <text x="539" y="277" font-size="13">JSON</text><text x="535" y="297" font-size="13">REST</text>
+    <text x="884" y="298" font-size="13">JDBC</text>
+    <rect x="256" y="545" width="386" height="115" rx="12" fill="white" stroke="#7c8ba2" stroke-dasharray="7 5"/>
+    <text x="276" y="577" font-size="18" font-weight="700">P · Módulos posteriores</text>
+    <text x="276" y="608" font-size="15">Objetos, reclamaciones, verificación, entregas,</text>
+    <text x="276" y="634" font-size="15">reportes y administración · permisos por validar</text>
+    <rect x="706" y="545" width="458" height="115" rx="12" fill="white" stroke="#7c8ba2" stroke-dasharray="7 5"/>
+    <text x="726" y="577" font-size="18" font-weight="700">P · Fotografías mediante API HTTP(S)</text>
+    <text x="726" y="608" font-size="15">Carpeta de servidor C:\makro\fotos; API por definir.</text>
+    <text x="726" y="634" font-size="15">La ruta de disco no es una dirección para el navegador.</text>
+    <g stroke="#7c8ba2" stroke-width="2" stroke-dasharray="6 5" fill="none" marker-end="url(#arrow)">
+      <path d="M390 486V541"/><path d="M741 486V541"/>
+    </g>
+    <text x="36" y="713" font-size="15">I = implementado en esta entrega · E = existente en código / dependencia requerida · P = propuesto, no implementado</text>
+    <text x="36" y="744" font-size="14">Las flechas representan interfaces y responsabilidades; no demuestran integración exitosa ni aprobación de Patricia.</text>
+  </g>
+</svg>

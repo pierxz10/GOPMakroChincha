@@ -1,0 +1,47 @@
+Fecha de las comprobaciones finales: 18/10/2026 (America/Lima).
+Stack final: React 19.3.1, TypeScript 7.0.2, Vite 8.3.4, Tailwind CSS 4.3.3.
+Entorno: Windows PowerShell, Node 24.16.0, npm 11.13.0, Microsoft Edge mediante Playwright 1.64.1.
+
+Instalación ejecutada:
+npm install --save-dev --save-exact vite typescript @playwright/test @fontsource/roboto
+npm install --save-exact react react-dom
+npm install --save-dev --save-exact @types/react @types/react-dom @vitejs/plugin-react tailwindcss @tailwindcss/vite
+Resultado: dependencias instaladas y lockfile actualizado; última instalación, 0 vulnerabilidades informadas por npm.
+npm ci es el comando reproducible preparado en README; no se ejecutó una reinstalación con ci en esta sesión.
+
+Comando: npm run build
+Salida observada:
+> npm run typecheck && vite build
+> tsc --noEmit
+vite v8.3.4 building client environment for production...
+29 modules transformed.
+dist/index.html generado.
+Código de salida: 0.
+
+Comando: npm test
+8 tests, 8 pass, 0 fail, 0 skipped.
+Código de salida: 0.
+Dobles de transporte SOLO en pruebas unitarias; no es un ensayo de API real.
+
+Comando: npm run dev
+VITE v8.3.4 ready. Local: http://127.0.0.1:5173/
+Servidor iniciado y usado para las pruebas de navegador.
+
+Comando final: npm run test:browser
+4 passed (5.2s), 0 skipped, 0 failed.
+Código de salida: 0.
+360/768/1440 responsive: recursos, geometría, obligatorios, navegación sin sesión.
+Intento real: POST /api/auth/login, fallo de conexión visible, posibilidad de reintento y contraseña borrada.
+Reporte estructurado: browser-results.json. Capturas guardadas en esta carpeta.
+Una reejecución previa coincidió con navegación/recarga del servidor de desarrollo al esperar fuentes; se sincronizó la prueba con la ruta pública antes de capturar. La corrida final anterior es la del código final.
+
+Comando: npm run verify:api
+ECONNREFUSED en http://localhost:9090 para las tres sondas.
+Código de salida: 1; bloqueo real de Backend, no fallo sustituido por datos ficticios.
+
+La compilación no demuestra autenticación exitosa. No se probaron credenciales válidas/inválidas reales ni renovación/salida remotas por falta de ambiente.
+
+Comando: npm run preview
+Build servido en http://127.0.0.1:4173/. Navegador: HTTP 200, título Inicio de sesión | Makro Chincha, pageErrors vacío.
+Evidencia: preview.json. Alcance: render del build, sin autenticación.
+Comprobación de documentación: 7 archivos Markdown, 0 enlaces locales a archivos inexistentes.

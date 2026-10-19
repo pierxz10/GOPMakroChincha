@@ -1,0 +1,17 @@
+﻿[
+    {
+        "file":  "arrow-right.svg",
+        "bytes":  467,
+        "sha256":  "e5fc4f81a022a302ebc84ac611ba0eaf2490440c39e86f13f6215221ba800795"
+    },
+    {
+        "file":  "key-round.svg",
+        "bytes":  1539,
+        "sha256":  "20b041c8e77b02633598982d4515d6b22ce23084deefeef2d484d5499fb1e6aa"
+    },
+    {
+        "file":  "makro-logo.png",
+        "bytes":  6386,
+        "sha256":  "4659fcc85661188d395ac1f6304a116d50703169603cd063aba9f360532d4fae"
+    }
+]

@@ -1,0 +1,72 @@
+﻿{
+    "repository":  "https://bitbucket.org/technologycenter1/objetos-personales.git",
+    "branch":  "master",
+    "commit":  "ded2115cb0c645f4c64f6ad771759f2e6627db2b",
+    "note":  "Inventario parcial de archivos inspeccionados. Hashes de la copia temporal; no se distribuye el Backend ni sus secretos.",
+    "files":  [
+                  {
+                      "path":  "pom.xml",
+                      "sha256":  "07f67ef118495c4e5734d06aba61ca8e9b29e6e2a2a42e5a6305ba3c6c35f14c"
+                  },
+                  {
+                      "path":  "README.md",
+                      "sha256":  "2e677d814c456f87368c95c7acc66573d6a9bbc6335a8d60ad2b30bf7c753c01"
+                  },
+                  {
+                      "path":  "src/main/resources/application.properties",
+                      "sha256":  "9dde3da532d46ac5c627b5137a7715b31b6cf028437caa89930517e3187ae43d"
+                  },
+                  {
+                      "path":  "src/main/java/com/makro/objetosperdidos/controller/AuthController.java",
+                      "sha256":  "57113cf6698960960b8fe9dc7d7d6bfc9f6bb5fbbd75cd6e564c4802bfe0a21f"
+                  },
+                  {
+                      "path":  "src/main/java/com/makro/objetosperdidos/controller/TokenController.java",
+                      "sha256":  "b01d7c08fbaf24ee01986ba77585b90ea13a829b92eb5e6084568192a4c678dc"
+                  },
+                  {
+                      "path":  "src/main/java/com/makro/objetosperdidos/dto/AuthRequest.java",
+                      "sha256":  "aa9a18fb040da038d94a3e61d8693528ea2413d1292f2aedc4a35f70684845f7"
+                  },
+                  {
+                      "path":  "src/main/java/com/makro/objetosperdidos/dto/AuthResponse.java",
+                      "sha256":  "28ac3b8468427216db58cd3cc348979a01861ca5b1f17b76d0a7a3b86d170007"
+                  },
+                  {
+                      "path":  "src/main/java/com/makro/objetosperdidos/common/model/BaseResponse.java",
+                      "sha256":  "c709cdbc59c459e41f0fe8845455128a984c5c985c90751e31cfeeacf094599c"
+                  },
+                  {
+                      "path":  "src/main/java/com/makro/objetosperdidos/common/utils/SingletonProperties.java",
+                      "sha256":  "36af95f508f5dee6969fa73a0a2f3cda61f01dd94e9d9bb94a64817897ae8fc6"
+                  },
+                  {
+                      "path":  "src/main/java/com/makro/objetosperdidos/component/AuthorizationFilter.java",
+                      "sha256":  "3ea3702ffffd76de3afc62a6702983fc61a53305e85bae15c73a6167f57fc165"
+                  },
+                  {
+                      "path":  "src/main/java/com/makro/objetosperdidos/component/PermisoInterceptor.java",
+                      "sha256":  "019c8a491d98048fcfbe318195ebe9ab85eaaeae7308d6fe1245ee9feb906b26"
+                  },
+                  {
+                      "path":  "src/main/java/com/makro/objetosperdidos/component/jwttoken/JwtTokenComponent.java",
+                      "sha256":  "a7818db092beaf17ebe90cfb70f9e50f378051213dcedd30269d13c8913ba892"
+                  },
+                  {
+                      "path":  "src/main/java/com/makro/objetosperdidos/service/AuthService.java",
+                      "sha256":  "b7f748d71065d492e14566578f7a6119d8eead8604f07b65ef58b265bae1d8a2"
+                  },
+                  {
+                      "path":  "src/main/java/com/makro/objetosperdidos/service/TokenService.java",
+                      "sha256":  "37a7b9182741d87a5fd9324bcceba57996d8b8bf5114310ff1574ed4de0fdd1b"
+                  },
+                  {
+                      "path":  "src/main/java/com/makro/objetosperdidos/config/DataSourceConfig.java",
+                      "sha256":  "5dd9006ad1cbce9f99a4fee83b58ce9644c89dc945fe0cd581808c46c08bea97"
+                  },
+                  {
+                      "path":  "src/main/java/com/makro/objetosperdidos/config/SecurityConfig.java",
+                      "sha256":  "fa9e058c0cadb3eb31c6f90a10efb8d2b98ae2633efeff13b4649a1909ebcfcf"
+                  }
+              ]
+}

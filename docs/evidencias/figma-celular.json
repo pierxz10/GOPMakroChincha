@@ -1,0 +1,1002 @@
+{
+  "page": "07 · Mockups · Celular",
+  "screens": [
+    {
+      "id": "37:924",
+      "name": "FP-01 · V2 · Acceso · Inicio de sesión",
+      "width": 360,
+      "height": 800,
+      "texts": [
+        "Chincha",
+        "Inicio de sesión",
+        "Usuario *",
+        "cuenta.demo",
+        "Contraseña *",
+        "••••••••",
+        "Ingresar",
+        "Recuperar acceso"
+      ],
+      "links": [
+        {
+          "name": "Botón · Ingresar",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "NODE",
+              "target": "37:1212"
+            }
+          ]
+        },
+        {
+          "name": "Botón · Recuperar acceso",
+          "actions": [
+            {
+              "type": "NODE",
+              "target": "37:1013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "37:1076",
+      "name": "FP-02 · V2 · RF-04 · Cambio obligatorio de contraseña",
+      "width": 360,
+      "height": 800,
+      "texts": [
+        "Chincha",
+        "Cambio obligatorio de\ncontraseña",
+        "Debes cambiar la contraseña temporal\npara continuar. Todos los campos son\nobligatorios.",
+        "Contraseña actual *",
+        "••••••••",
+        "Nueva contraseña *",
+        "••••••••",
+        "Debe ser distinta de la actual y cumplir la\npolítica vigente.",
+        "Confirmar nueva contraseña *",
+        "••••••••",
+        "Actualizar contraseña"
+      ],
+      "links": [
+        {
+          "name": "Botón · Actualizar contraseña",
+          "actions": [
+            {
+              "type": "NODE",
+              "target": "167:15889"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "37:1013",
+      "name": "FP-03 · V2 · RF-03 · Recuperar contraseña",
+      "width": 360,
+      "height": 800,
+      "texts": [
+        "Chincha",
+        "Recuperar contraseña",
+        "Ingresa el correo electrónico asociado a tu\ncuenta.",
+        "Correo electrónico *",
+        "cuenta.demo@example.com",
+        "Usa el correo con el que se registró tu\ncuenta.",
+        "Solicitar recuperación",
+        "Volver al acceso"
+      ],
+      "links": [
+        {
+          "name": "Botón · Solicitar recuperación",
+          "actions": [
+            {
+              "type": "NODE",
+              "target": "37:1048"
+            }
+          ]
+        },
+        {
+          "name": "Botón · Volver al acceso",
+          "actions": [
+            {
+              "type": "NODE",
+              "target": "37:924"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "43:2318",
+      "name": "FP-04 · Confirmar cierre de sesión",
+      "width": 360,
+      "height": 800,
+      "texts": [
+        "¿Cerrar sesión?",
+        "Tu sesión finalizará. Para volver a entrar\nnecesitarás iniciar sesión nuevamente.",
+        "Cerrar sesión",
+        "Cancelar"
+      ],
+      "links": [
+        {
+          "name": "Botón · Cerrar sesión",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "NODE",
+              "target": "37:924"
+            }
+          ]
+        },
+        {
+          "name": "Botón · Cancelar",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "169:10885",
+      "name": "FP-09 · Editar información del objeto",
+      "width": 360,
+      "height": 800,
+      "texts": [
+        "Menú",
+        "Editar información del\nobjeto",
+        "Actualiza la información del hallazgo; el código y\nla trazabilidad se conservan.",
+        "Código único",
+        "OBJ-2026-000001",
+        "Usuario registrador",
+        "Asistente demo",
+        "Fecha del registro",
+        "16 oct 2026 · 10:40",
+        "Categoría *",
+        "Accesorios",
+        "Nombre del objeto",
+        "Mochila negra",
+        "Máximo 100 caracteres.",
+        "Fecha del hallazgo *",
+        "2026-10-16",
+        "Hora del hallazgo *",
+        "10:35",
+        "Lugar del hallazgo *",
+        "Zona de cajas",
+        "Descripción",
+        "Tela negra, dos cierres; detalle del bolsillo frontal actualizado.",
+        "Máximo 500 caracteres.",
+        "Fotografía opcional · JPG, JPEG o PNG",
+        "Seleccionar o reemplazar foto",
+        "Revisar cambios",
+        "Cancelar",
+        "Objeto ENTREGADO",
+        "El estado final no se cambia. La\nautorización para editar su información\nestá pendiente de definición; este\nformulario representa un objeto\ndisponible."
+      ],
+      "links": [
+        {
+          "name": "Botón · Menú",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Botón · Seleccionar o reemplazar foto",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Botón · Revisar cambios",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Botón · Cancelar",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "38:1931",
+      "name": "FP-11 · V2 · RF-19 a RF-21 · Reclamaciones",
+      "width": 360,
+      "height": 800,
+      "texts": [
+        "Menú",
+        "Consulta de\nreclamaciones",
+        "Busca por documento o código de objeto y\ncombina el estado.",
+        "Documento del reclamante",
+        "00000000",
+        "Máximo 20 caracteres. DNI, CE o pasaporte.",
+        "Código del objeto",
+        "OBJ-2026-000001",
+        "Estado",
+        "Todos",
+        "Buscar",
+        "Filtrar estado",
+        "Limpiar filtros",
+        "Datos personales protegidos",
+        "La visualización de nombre, documento\ny teléfono depende de los permisos\nvigentes.",
+        "Registros de demostración",
+        "ACTIVA",
+        "Mochila negra",
+        "Objeto",
+        "OBJ-2026-000001",
+        "Reclamante",
+        "Reclamante protegido",
+        "17 oct 2026 · 12:15",
+        "Ver detalle",
+        "APROBADA",
+        "Teléfono azul",
+        "Objeto",
+        "OBJ-2026-000002",
+        "Reclamante",
+        "Reclamante protegido"
+      ],
+      "links": [
+        {
+          "name": "Button · Menú",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Botón · Buscar",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Botón · Filtrar estado",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Botón · Limpiar filtros",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Botón · Ver detalle",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Botón · Ver detalle",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "38:2152",
+      "name": "FP-13 · V2 · RF-22 y RF-23 · Verificar identidad",
+      "width": 360,
+      "height": 800,
+      "texts": [
+        "Menú",
+        "Verificación de identidad",
+        "Registra y contrasta el documento presentado con\nla reclamación.",
+        "RECLAMADO",
+        "Mochila negra",
+        "Código automático",
+        "OBJ-2026-000001",
+        "Hallazgo",
+        "16 oct 2026 · 10:35 · Zona de cajas",
+        "Responsable del registro",
+        "Asistente demo",
+        "Documento declarado",
+        "DNI · 00000000",
+        "Tipo de documento presentado",
+        "DNI",
+        "DNI, CE o PASAPORTE.",
+        "Número de documento presentado",
+        "00000000",
+        "Máximo 20 caracteres.",
+        "Resultado de verificación",
+        "APROBADA: reclamación\nAPROBADA y objeto VERIFICADO.\nRECHAZADA: motivo obligatorio y\nentrega bloqueada.",
+        "Registrar APROBADA",
+        "Registrar RECHAZADA"
+      ],
+      "links": [
+        {
+          "name": "Button · Menú",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Botón · Registrar APROBADA",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Botón · Registrar RECHAZADA",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "41:2075",
+      "name": "FP-20 · audit",
+      "width": 360,
+      "height": 800,
+      "texts": [
+        "Menú",
+        "Bitácora del sistema",
+        "Consulta de eventos para Administrador. Los registros son de solo lectura.",
+        "Usuario",
+        "Todos",
+        "Fecha",
+        "2026-10-17",
+        "Registrar objeto",
+        "Usuario y momento",
+        "Asistente demo · 17 oct 2026",
+        "Ver movimiento",
+        "Verificar identidad",
+        "Usuario y momento",
+        "Auxiliar demo · 17 oct 2026",
+        "Ver movimiento",
+        "Actualizar estado",
+        "Usuario y momento",
+        "Supervisor demo · 17 oct 2026",
+        "Ver movimiento",
+        "Makro Chincha · Datos de demostración"
+      ],
+      "links": [
+        {
+          "name": "Button · Menú",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Button · Ver movimiento",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Button · Ver movimiento",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        },
+        {
+          "name": "Button · Ver movimiento",
+          "actions": [
+            {
+              "type": "SET_VARIABLE",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            },
+            {
+              "type": "CONDITIONAL",
+              "target": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+# INVENTARIO DE CONFIGURACIÓN DEL BACKEND; NO copiar a variables VITE.
+# Propiedades leídas por el código de master ded2115c. Developer 2 completa su ambiente.
+# No contiene secretos. No constituye una configuración ejecutable ni un esquema de BD.
+app.datasource_host=localhost
+app.datasource_port=3306
+app.datasource_database=
+app.datasource_user=
+app.datasource_password=
+# HS512 requiere una clave secreta adecuada generada por Developer 2; nunca en el Frontend.
+seguridad.token.jwt_secret_key=
+seguridad.token.type=Bearer
+# Milisegundos. VALORES PROPUESTOS, deben acordarse con Developer 2/María.
+seguridad.token.expiration_time=900000
+seguridad.token.expiration_refresh=86400000
+# 5 es el valor por defecto observado en AuthService.
+seguridad.max_intentos=5
+# Propiedad real incorporada en el Backend d8f9799; permite los orígenes locales del Frontend.
+app.cors_origins=http://localhost:5173,http://localhost:4173,http://127.0.0.1:5173,http://127.0.0.1:4173
+# Correo solo para recuperación posterior; login no envía correo.
+app.mail_host=
+app.mail_port=587
+app.mail_user=
+app.mail_password=
+app.mail_from=
